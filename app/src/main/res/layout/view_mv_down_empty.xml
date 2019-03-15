@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_white"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/pic_remind_blank"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="这里空空如也！"
+        android:textColor="@color/dynamic_text"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/selector_btn_background_forbidden"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="逛逛MV"
+        android:textColor="#f4f3f1"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/pic_yaogan_dy"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_left"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_dy"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_right"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_dy"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_left"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_dy"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_left"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/pic_yaogan_dy"
+        android:duration="200" />
+</animation-list>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/bg_color">
+
+        <FrameLayout
+            android:id="@+id/gift_frm"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bdbg_shape">
+
+            <ImageView
+                android:id="@+id/gift_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+            <FrameLayout
+                android:id="@+id/click_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#51000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="点击交易"
+                    android:textColor="@color/btn_sure_forbidden"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gift_frm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/textNormal"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/gift_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gift_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/btn_sure_forbidden"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

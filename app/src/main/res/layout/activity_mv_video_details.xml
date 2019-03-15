@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white">
+
+
+    <FrameLayout
+        android:id="@+id/mv_video_layout"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <cn.feihutv.zhibofeihu.ui.widget.video.FhJZVideoPlayerStandard
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+        <ImageView
+            android:layout_gravity="right|bottom"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@mipmap/mv_fhzb_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycle_view"
+        android:paddingBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mv_detail_not"
+        android:layout_below="@+id/mv_video_layout"
+        android:background="@color/bgpupelto" />
+
+
+    <TextView
+        android:id="@+id/mv_detail_not"
+        android:background="#fffea6bd"
+        android:layout_above="@+id/inputBar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:textSize="13sp"
+        android:text="主播：可爱妮妮收到了1314个礼物哦 "
+        android:textColor="@color/white"
+        android:layout_height="31.5dp"/>
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TalkGiftView
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

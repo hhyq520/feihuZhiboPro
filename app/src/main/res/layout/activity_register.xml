@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".ui.user.register.RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.feihutv.zhibofeihu.utils.weiget.view.FHAutoImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ImageSrc="@drawable/img_girl"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_login_bg"/>
+        tv_xy
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="@color/appColor"
+        android:drawableLeft="@drawable/ic_left_back"
+        android:drawablePadding="6dp"
+        android:padding="14dp"/>
+
+    <include layout="@layout/layout_register"/>
+
+</RelativeLayout>
+

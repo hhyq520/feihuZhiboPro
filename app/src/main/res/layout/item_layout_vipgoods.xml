@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_vipgoods"
+        android:layout_width="match_parent"
+        android:background="@drawable/select_recyclerview_checked"
+        android:layout_height="63dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_goodsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首次开通30天"
+                    android:textColor="@color/messageTextColor"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/img_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/img_recommend"/>
+
+                <ImageView
+                    android:id="@+id/img_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/img_discount"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_czz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_marginTop="10dp"
+                android:text="赠送成长值1000点，小喇叭4个"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_hb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/icon_gold_logo"
+            android:gravity="center"
+            android:textColor="@color/btn_sure_forbidden"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

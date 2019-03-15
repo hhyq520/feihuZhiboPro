@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#8DE8E2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/frm_top"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_zs_pic"
+        android:layout_width="358dp"
+        android:layout_height="86dp">
+
+    </FrameLayout>
+    <LinearLayout
+        android:background="@drawable/white_top_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lin_no2"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_head2"
+                android:src="@drawable/face"
+                android:layout_width="66dp"
+                android:layout_height="66dp" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/icon_second_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nick_name2"
+                    android:text="昵称"
+                    android:textSize="12sp"
+                    android:textColor="@color/my_tab_text_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/img_level2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_hubi2"
+                    android:textColor="@color/messageTextColor"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/icon_intimatevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="130dp"
+            android:background="#19000000"/>
+        <LinearLayout
+            android:id="@+id/lin_no1"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_head1"
+                    android:src="@drawable/face"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp" />
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/icon_first_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_nickname1"
+                    android:text="昵称"
+                    android:textSize="12sp"
+                    android:textColor="@color/my_tab_text_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/img_level1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_hubi1"
+                    android:textColor="@color/messageTextColor"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/icon_intimatevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="130dp"
+            android:background="#19000000"/>
+        <LinearLayout
+            android:id="@+id/lin_no3"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_head3"
+                    android:src="@drawable/face"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp" />
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/icon_third_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_nickname3"
+                    android:text="昵称"
+                    android:textSize="12sp"
+                    android:textColor="@color/my_tab_text_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/img_level3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_hubi3"
+                    android:textColor="@color/messageTextColor"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/icon_intimatevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+</LinearLayout>

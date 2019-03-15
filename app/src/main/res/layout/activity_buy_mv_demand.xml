@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white">
+
+
+    <FrameLayout
+        android:id="@+id/mv_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@color/black">
+
+        <cn.feihutv.zhibofeihu.ui.widget.video.FhJZVideoPlayerStandard
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mv_video_layout"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="9dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mv_user_head"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:src="@drawable/head_bg"/>
+
+
+            <ImageView
+                android:id="@+id/mv_user_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="3.5dp"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:src="@drawable/icon_liveing"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/mv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mv_user_ing"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:ellipsize="end"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:text="主播名称6666"
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/mv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:text="2017年11月23日10:55"
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/driver"
+            style="@style/mv_driver_h"
+            android:layout_below="@+id/rl_user"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driver"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/mv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="80"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_mv_driver"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/rl_userInfo"
+        android:background="@color/mv_driver_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_mv_driver"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/mv_detail_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="我的需求:"
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mv_detail_songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_detail_tt"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/mv_detail_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_detail_songName"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/mv_edit"
+            android:layout_width="126.5dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/selector_mv_btn_cancel_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="修改"
+            android:textColor="@color/mv_text_color_select"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/mv_buy"
+            android:layout_width="126.5dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="33dp"
+            android:background="@drawable/selector_mv_like_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="购买"
+            android:textColor="@color/mv_text_color_select2"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

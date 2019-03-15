@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_one_item_white_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.6">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/face"/>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_luck_logo"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_user_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈哈"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/messageTextColor"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="打赏主播"
+                android:textColor="@color/textNormal"/>
+
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_cucumbers"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x66"
+                android:maxLines="1"
+                android:textColor="@color/textNormal"
+                android:textSize="10sp"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_gold_logo"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/btn_sure_forbidden"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:text="获得22.5万"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textNormal"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_marginTop="12dp"
+            android:text="2017.10.26 14:20"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_host"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.6">
+
+        <ImageView
+            android:id="@+id/iv_host"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/face"/>
+
+        <ImageView
+            android:id="@+id/iv_host_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_host"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_host_crown"/>
+
+        <ImageView
+            android:id="@+id/iv_host_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_host"
+            android:layout_marginRight="-6dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/icon_live_logo"/>
+
+        <TextView
+            android:id="@+id/tv_host_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_host"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="哈哈哈哈"
+            android:textColor="@color/messageTextColor"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

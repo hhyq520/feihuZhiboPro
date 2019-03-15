@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/app_white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/live_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/cover"
+        android:ellipsize="end"
+        android:textColor="@color/btn_sure_forbidden"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/cover"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/host_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/time"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/noticetextcolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/noticetextcolor"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

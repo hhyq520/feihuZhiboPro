@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/prepare_view"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_exit"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="19dp"/>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="100dp"
+            android:hint="@string/tip_kaibo_title"
+            android:textColorHint="@color/app_white"
+            android:textColor="@color/app_white"
+            android:maxLength="10"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bangdan_bg"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="位置"
+            android:textColor="@color/app_white"
+            android:textColorHint="@color/text_gray"
+            android:drawableLeft="@drawable/location"
+            android:textSize="15sp"
+            android:drawablePadding="15dp"
+           />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_button"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/location_button"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:text="请选择以下标签"
+            android:textColor="@color/app_white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/icon_fresh"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_refresh"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:textColor="@color/text_color_select_black"
+                android:textSize="14sp"
+                android:id="@+id/btn_yanzhi"
+                android:background="@drawable/btn_transparent_bg"
+                android:layout_width="60dp"
+                android:layout_height="31dp"
+               />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+               />
+
+            <Button
+
+                android:background="@drawable/btn_transparent_bg"
+                android:textColor="@color/text_color_select_black"
+                android:textSize="14sp"
+                android:id="@+id/btn_xinxiu"
+                android:layout_width="60dp"
+                android:layout_height="31dp"
+               />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+               />
+
+            <Button
+                android:textSize="14sp"
+                android:background="@drawable/btn_transparent_bg"
+                android:textColor="@color/text_color_select_black"
+                android:id="@+id/btn_caiyi"
+                android:layout_width="60dp"
+                android:layout_height="31dp"
+              />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                />
+
+            <Button
+                android:background="@drawable/btn_transparent_bg"
+                android:textColor="@color/text_color_select_black"
+                android:textSize="14sp"
+                android:id="@+id/btn_xinnan"
+                android:layout_width="60dp"
+                android:layout_height="31dp"
+               />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bangdan_bg"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btn_share_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wb_share"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btn_share_qzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qzone_share"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btn_share_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wx_share"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btn_share_wx_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/friends_share"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btn_share_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qq_share"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_begin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/startplay_shape"
+            android:textColor="@color/messageTextColor"
+            android:text="开始直播"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/btn_agree"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/kbxy_select"/>
+
+            <TextView
+                android:id="@+id/tv_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="勾选同意直播平台协议"
+                android:textSize="13sp"
+                android:textColor="@color/app_white"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

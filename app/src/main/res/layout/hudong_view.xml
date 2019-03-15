@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="选择你认为会输的一方"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/textNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/rb_group"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公老虎 (1:1)"
+            android:textColor="@color/textNormal"
+            android:button="@null"
+            android:layout_marginRight="7dp"
+            android:drawableLeft="@drawable/rb_select"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"/>
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:id="@+id/rb_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="母老虎 (1:1)"
+            android:textColor="@color/textNormal"
+            android:button="@null"
+            android:drawableLeft="@drawable/rb_select"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>

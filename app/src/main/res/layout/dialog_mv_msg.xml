@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_shape25"
+        android:layout_centerInParent="true"
+        android:layout_margin="37.5dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="24dp"
+        >
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成为主播才能发布视频、赚取需求悬赏快去开播吧！"
+            android:gravity="center"
+            android:textColor="@color/my_tab_text_n"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_below="@+id/tv_pop"
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/yellow_bg"
+            android:layout_centerInParent="true"
+            android:textColor="@color/app_white"
+            android:text="知道啦"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/tv_sure"
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/my_tab_text_n"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

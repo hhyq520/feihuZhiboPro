@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.feihutv.zhibofeihu.ui.bangdan.GuardFragment">
+
+    <cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout
+        android:id="@+id/guard_swip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/guard_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout>
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.StatusView
+        android:id="@+id/guard_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.feihutv.zhibofeihu.ui.me.personalInfo.PersonalInfoActivity">
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/person_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="@string/personalInfo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c0c0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/person_rl"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/ripple_item_white_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/head_pic"
+                    android:textColor="@color/textNormal"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/person_headImg"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/face" />
+            </RelativeLayout>
+
+            <View style="@style/mine_item_person_view" />
+
+            <RelativeLayout
+                android:id="@+id/person_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@drawable/ripple_item_white_bg"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="封面"
+                    android:textColor="@color/textNormal"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/person_imgBg"
+                    android:layout_width="78dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg" />
+            </RelativeLayout>
+
+            <View style="@style/mine_item_person_view" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/person_nick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:isBottom="true"
+                app:name="@string/nickName" />
+
+            <View style="@style/mine_item_person_view" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/person_sex"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:isBottom="true"
+                app:name="@string/sex" />
+
+            <View style="@style/mine_item_person_view" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/feihu_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:isBottom="true"
+                app:name="飞虎ID" />
+
+            <View style="@style/mine_item_person_view" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/person_signature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:content="请输入"
+                app:isBottom="true"
+                app:name="@string/personalized_signature" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/authentication"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:content="未认证"
+                app:isBottom="true"
+                app:name="@string/authentication" />
+
+            <View style="@style/mine_item_person_view" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/modify_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:isBottom="true"
+                app:name="@string/modify_password" />
+
+            <View style="@style/mine_item_person_view" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+                android:id="@+id/person_binding"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:canNav="true"
+                app:content="未绑定"
+                app:isBottom="true"
+                app:name="@string/binding_mobile_phone_number" />
+
+            <View style="@style/mine_item_person_view" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

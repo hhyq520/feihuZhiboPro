@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/zb_eui_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:moreText="@string/prepaid_phone_records"
+        app:titleText="@string/recharge"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/diver"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/text15"
+                    android:textColor="@color/textNormal"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_hubi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="0"
+                    android:textColor="@color/btn_sure_forbidden"
+                    android:textSize="26sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="关注飞虎直播公众号，充值更优惠"
+                android:textColor="@color/textNormal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="1RMB=100虎币"
+                android:textColor="@color/textNormal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/diver"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_white"
+                android:orientation="horizontal">
+
+
+                <cn.feihutv.zhibofeihu.utils.TCActivityRecharge
+                    android:id="@+id/tca1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chongzhi_unselect_shape"/>
+
+                <cn.feihutv.zhibofeihu.utils.TCActivityRecharge
+                    android:id="@+id/tca2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chongzhi_unselect_shape"/>
+
+                <cn.feihutv.zhibofeihu.utils.TCActivityRecharge
+                    android:id="@+id/tca3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chongzhi_unselect_shape"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_white"
+                android:orientation="horizontal">
+
+
+                <cn.feihutv.zhibofeihu.utils.TCActivityRecharge
+                    android:id="@+id/tca4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chongzhi_unselect_shape"/>
+
+                <cn.feihutv.zhibofeihu.utils.TCActivityRecharge
+                    android:id="@+id/tca5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chongzhi_unselect_shape"/>
+
+                <cn.feihutv.zhibofeihu.utils.TCActivityRecharge
+                    android:id="@+id/tca6"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chongzhi_unselect_shape"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/define_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_shape_50"
+                android:hint="请输入自定金额(元)..."
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/text28"
+                    android:textColor="@color/textNormal"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_pay_zfb"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_pay_normal"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/diver"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_wx"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/app_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/text29"
+                    android:textColor="@color/textNormal"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_pay_wx"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_pay_normal"
+                    android:button="@null"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_cz"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/selector_btn_background_forbidden"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/recharge"
+                android:textColor="@color/app_white"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="充值说明"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="50dp"
+                android:text="@string/recharge_explain"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

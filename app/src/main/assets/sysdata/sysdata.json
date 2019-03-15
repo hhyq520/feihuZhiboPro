@@ -1,0 +1,3107 @@
+{
+  "sysGift": [
+    {
+      "id": "17",
+      "name": "巧克力",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "17",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/chocolate.png",
+      "cosPath": "gift/v3/chocolate.png",
+      "sortOrder": "3"
+    },
+    {
+      "id": "16",
+      "name": "点歌卡",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "58",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/song.png",
+      "cosPath": "gift/v3/song.png",
+      "sortOrder": "6"
+    },
+    {
+      "id": "15",
+      "name": "DA飞机",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "15",
+      "isAnimation": "1",
+      "fileName": "airplane",
+      "animName": "airplane",
+      "localPath": "giftimages/plane.png",
+      "cosPath": "gift/v3/plane.png",
+      "sortOrder": "19"
+    },
+    {
+      "id": "14",
+      "name": "宾利跑车",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "14",
+      "isAnimation": "1",
+      "fileName": "binlicar",
+      "animName": "binlicar",
+      "localPath": "giftimages/binli.png",
+      "cosPath": "gift/v3/binli.png",
+      "sortOrder": "18"
+    },
+    {
+      "id": "13",
+      "name": "游轮",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "13",
+      "isAnimation": "1",
+      "fileName": "cruise",
+      "animName": "cruise",
+      "localPath": "giftimages/ship.png",
+      "cosPath": "gift/v3/cruise.png",
+      "sortOrder": "17"
+    },
+    {
+      "id": "12",
+      "name": "高射炮",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "12",
+      "isAnimation": "1",
+      "fileName": "gun",
+      "animName": "gun",
+      "localPath": "giftimages/artillery.png",
+      "cosPath": "gift/v3/artillery.png",
+      "sortOrder": "20"
+    },
+    {
+      "id": "11",
+      "name": "钻戒",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "11",
+      "isAnimation": "1",
+      "fileName": "ring",
+      "animName": "ring",
+      "localPath": "giftimages/ring.png",
+      "cosPath": "gift/v3/ring.png",
+      "sortOrder": "15"
+    },
+    {
+      "id": "10",
+      "name": "金话筒",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "10",
+      "isAnimation": "1",
+      "fileName": "microphone",
+      "animName": "microphone",
+      "localPath": "giftimages/microphone.png",
+      "cosPath": "gift/v3/microphone.png",
+      "sortOrder": "14"
+    },
+    {
+      "id": "9",
+      "name": "摩天轮",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "9",
+      "isAnimation": "1",
+      "fileName": "wheel",
+      "animName": "wheel",
+      "localPath": "giftimages/wheel.png",
+      "cosPath": "gift/v3/wheel.png",
+      "sortOrder": "13"
+    },
+    {
+      "id": "8",
+      "name": "爱心",
+      "incomePercent": "350",
+      "normalIncomePercent": "350",
+      "goodsId": "8",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/heart.png",
+      "cosPath": "gift/v3/heart.png",
+      "sortOrder": "5"
+    },
+    {
+      "id": "7",
+      "name": "皇冠",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "7",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/crown.png",
+      "cosPath": "gift/v3/crown.png",
+      "sortOrder": "10"
+    },
+    {
+      "id": "6",
+      "name": "吻",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "6",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/kiss.png",
+      "cosPath": "gift/v3/kiss.png",
+      "sortOrder": "8"
+    },
+    {
+      "id": "5",
+      "name": "蛋糕",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "5",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/cake.png",
+      "cosPath": "gift/v3/cake.png",
+      "sortOrder": "9"
+    },
+    {
+      "id": "4",
+      "name": "迪奥",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "4",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/diao.png",
+      "cosPath": "gift/v3/dior.png",
+      "sortOrder": "11"
+    },
+    {
+      "id": "3",
+      "name": "红玫瑰",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "3",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/rose.png",
+      "cosPath": "gift/v3/rose.png",
+      "sortOrder": "7"
+    },
+    {
+      "id": "2",
+      "name": "香蕉棒",
+      "incomePercent": "350",
+      "normalIncomePercent": "350",
+      "goodsId": "2",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/banana.png",
+      "cosPath": "gift/v3/banana.png",
+      "sortOrder": "4"
+    },
+    {
+      "id": "1",
+      "name": "小黄瓜",
+      "incomePercent": "350",
+      "normalIncomePercent": "350",
+      "goodsId": "1",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/huanggua.png",
+      "cosPath": "gift/v3/cucumber.png",
+      "sortOrder": "2"
+    },
+    {
+      "id": "18",
+      "name": "向日葵",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "18",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/sunflower.png",
+      "cosPath": "gift/v3/sunflower.png",
+      "sortOrder": "1"
+    },
+    {
+      "id": "19",
+      "name": "香水",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "19",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/perfume.png",
+      "cosPath": "gift/v3/perfume.png",
+      "sortOrder": "12"
+    },
+    {
+      "id": "20",
+      "name": "飞虎流星",
+      "incomePercent": "0",
+      "normalIncomePercent": "0",
+      "goodsId": "52",
+      "isAnimation": "0",
+      "fileName": "",
+      "animName": "",
+      "localPath": "giftimages/icon_award.png",
+      "cosPath": "gift/v3/feihustar.png",
+      "sortOrder": "21"
+    },
+    {
+      "id": "21",
+      "name": "水晶鞋",
+      "incomePercent": "400",
+      "normalIncomePercent": "400",
+      "goodsId": "53",
+      "isAnimation": "1",
+      "fileName": "crystal",
+      "animName": "crystal",
+      "localPath": "giftimages/crystal.png",
+      "cosPath": "gift/v3/crystal.png",
+      "sortOrder": "16"
+    }
+  ],
+  "sysHB": [
+    {
+      "saleId": "1",
+      "goldCnt": "600",
+      "rmb": "6.00",
+      "giveGold": "0"
+    },
+    {
+      "saleId": "2",
+      "goldCnt": "1000",
+      "rmb": "10.00",
+      "giveGold": "0"
+    },
+    {
+      "saleId": "3",
+      "goldCnt": "3000",
+      "rmb": "30.00",
+      "giveGold": "0"
+    },
+    {
+      "saleId": "4",
+      "goldCnt": "10000",
+      "rmb": "100.00",
+      "giveGold": "0"
+    },
+    {
+      "saleId": "5",
+      "goldCnt": "30000",
+      "rmb": "300.00",
+      "giveGold": "0"
+    },
+    {
+      "saleId": "6",
+      "goldCnt": "50000",
+      "rmb": "500.00",
+      "giveGold": "0"
+    }
+  ],
+  "sysGoods": [
+    {
+      "id": "1",
+      "name": "直播间-小黄瓜",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":1}]",
+      "price": "60",
+      "realPrice": "60",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "2",
+      "name": "直播间-香蕉棒",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":2}]",
+      "price": "80",
+      "realPrice": "80",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "3",
+      "name": "直播间-红玫瑰",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":3}]",
+      "price": "520",
+      "realPrice": "520",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "4",
+      "name": "直播间-迪奥",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":4}]",
+      "price": "990",
+      "realPrice": "990",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "5",
+      "name": "直播间-蛋糕",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":5}]",
+      "price": "660",
+      "realPrice": "660",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "6",
+      "name": "直播间-吻",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":6}]",
+      "price": "520",
+      "realPrice": "520",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "7",
+      "name": "直播间-皇冠",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":7}]",
+      "price": "880",
+      "realPrice": "880",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "8",
+      "name": "直播间-爱心",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":8}]",
+      "price": "100",
+      "realPrice": "100",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "9",
+      "name": "直播间-摩天轮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":9}]",
+      "price": "5200",
+      "realPrice": "5200",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "10",
+      "name": "直播间-金话筒",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":10}]",
+      "price": "6990",
+      "realPrice": "6990",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "11",
+      "name": "直播间-钻戒",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":11}]",
+      "price": "9990",
+      "realPrice": "9990",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "12",
+      "name": "直播间-高射炮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":12}]",
+      "price": "41900",
+      "realPrice": "41900",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "13",
+      "name": "直播间-游轮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":13}]",
+      "price": "13140",
+      "realPrice": "13140",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "14",
+      "name": "直播间-宾利跑车",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":14}]",
+      "price": "18888",
+      "realPrice": "18888",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "15",
+      "name": "直播间-DA飞机",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":15}]",
+      "price": "19800",
+      "realPrice": "19800",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "16",
+      "name": "直播间-摩天轮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":16}]",
+      "price": "5200",
+      "realPrice": "5200",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "17",
+      "name": "直播间-巧克力",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":17}]",
+      "price": "60",
+      "realPrice": "60",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "18",
+      "name": "直播间-向日葵",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":18}]",
+      "price": "20",
+      "realPrice": "20",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "19",
+      "name": "直播间-香水",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":19}]",
+      "price": "1800",
+      "realPrice": "1800",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "20",
+      "name": "小黄瓜",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":1}]",
+      "price": "60",
+      "realPrice": "60",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "1",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "21",
+      "name": "香蕉棒",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":2}]",
+      "price": "80",
+      "realPrice": "80",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "2",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "22",
+      "name": "红玫瑰",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":3}]",
+      "price": "520",
+      "realPrice": "520",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "3",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "23",
+      "name": "迪奥",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":4}]",
+      "price": "990",
+      "realPrice": "990",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "4",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "24",
+      "name": "蛋糕",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":5}]",
+      "price": "660",
+      "realPrice": "660",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "5",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "25",
+      "name": "吻",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":6}]",
+      "price": "520",
+      "realPrice": "520",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "6",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "26",
+      "name": "皇冠",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":7}]",
+      "price": "880",
+      "realPrice": "880",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "7",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "27",
+      "name": "爱心",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":8}]",
+      "price": "100",
+      "realPrice": "100",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "8",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "28",
+      "name": "摩天轮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":9}]",
+      "price": "5200",
+      "realPrice": "5200",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "9",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "29",
+      "name": "金话筒",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":10}]",
+      "price": "6990",
+      "realPrice": "6990",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "10",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "30",
+      "name": "钻戒",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":11}]",
+      "price": "9990",
+      "realPrice": "9990",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "11",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "31",
+      "name": "高射炮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":12}]",
+      "price": "41900",
+      "realPrice": "41900",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "12",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "32",
+      "name": "游轮",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":13}]",
+      "price": "13140",
+      "realPrice": "13140",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "13",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "33",
+      "name": "宾利跑车",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":14}]",
+      "price": "18888",
+      "realPrice": "18888",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "14",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "34",
+      "name": "DA飞机",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":15}]",
+      "price": "19800",
+      "realPrice": "19800",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "15",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "35",
+      "name": "点歌卡",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":16}]",
+      "price": "500",
+      "realPrice": "500",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "16",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "36",
+      "name": "巧克力",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":17}]",
+      "price": "60",
+      "realPrice": "60",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "17",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "37",
+      "name": "向日葵",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":18}]",
+      "price": "20",
+      "realPrice": "20",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "18",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "38",
+      "name": "香水",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":19}]",
+      "price": "1800",
+      "realPrice": "1800",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "19",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "39",
+      "name": "山地车",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":1}]",
+      "price": "3000",
+      "realPrice": "3000",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "1",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "40",
+      "name": "摩托车",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":2}]",
+      "price": "5000",
+      "realPrice": "5000",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "2",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "41",
+      "name": "普通轿车",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":3}]",
+      "price": "12800",
+      "realPrice": "12800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "3",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "42",
+      "name": "豪华轿车",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":4}]",
+      "price": "22800",
+      "realPrice": "22800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "4",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "43",
+      "name": "赛车",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":5}]",
+      "price": "38800",
+      "realPrice": "38800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "5",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "44",
+      "name": "F1方程式赛车",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":6}]",
+      "price": "48800",
+      "realPrice": "48800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "6",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "45",
+      "name": "坦克",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":7}]",
+      "price": "58800",
+      "realPrice": "58800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "7",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "46",
+      "name": "直升飞机",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":8}]",
+      "price": "68800",
+      "realPrice": "68800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "8",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "47",
+      "name": "战斗机",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":9}]",
+      "price": "88800",
+      "realPrice": "88800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "9",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "52",
+      "name": "直播间-飞虎流星",
+      "goods": "[{\"type\":1,\"cnt\":0,\"id\":20}]",
+      "price": "0",
+      "realPrice": "0",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "48",
+      "name": "飞船",
+      "goods": "[{\"type\":2,\"cnt\":1,\"id\":10}]",
+      "price": "168800",
+      "realPrice": "168800",
+      "enableYHB": "0",
+      "show": "2",
+      "sortOrder": "10",
+      "remark": "商城中的座驾"
+    },
+    {
+      "id": "53",
+      "name": "直播间-水晶鞋",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":21}]",
+      "price": "12800",
+      "realPrice": "12800",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    },
+    {
+      "id": "54",
+      "name": "水晶鞋",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":21}]",
+      "price": "12800",
+      "realPrice": "12800",
+      "enableYHB": "1",
+      "show": "1",
+      "sortOrder": "21",
+      "remark": "商城中的礼物"
+    },
+    {
+      "id": "58",
+      "name": "直播间-点歌卡",
+      "goods": "[{\"type\":1,\"cnt\":1,\"id\":16}]",
+      "price": "500",
+      "realPrice": "500",
+      "enableYHB": "1",
+      "show": "0",
+      "sortOrder": "0",
+      "remark": "这个不能修改和删除"
+    }
+  ],
+  "sysLevel": [
+    {
+      "level": "1",
+      "needExp": "0"
+    },
+    {
+      "level": "2",
+      "needExp": "110"
+    },
+    {
+      "level": "3",
+      "needExp": "320"
+    },
+    {
+      "level": "4",
+      "needExp": "720"
+    },
+    {
+      "level": "5",
+      "needExp": "1600"
+    },
+    {
+      "level": "6",
+      "needExp": "2259"
+    },
+    {
+      "level": "7",
+      "needExp": "4957"
+    },
+    {
+      "level": "8",
+      "needExp": "8997"
+    },
+    {
+      "level": "9",
+      "needExp": "14667"
+    },
+    {
+      "level": "10",
+      "needExp": "22255"
+    },
+    {
+      "level": "11",
+      "needExp": "32049"
+    },
+    {
+      "level": "12",
+      "needExp": "44337"
+    },
+    {
+      "level": "13",
+      "needExp": "59407"
+    },
+    {
+      "level": "14",
+      "needExp": "77547"
+    },
+    {
+      "level": "15",
+      "needExp": "114045"
+    },
+    {
+      "level": "16",
+      "needExp": "165585"
+    },
+    {
+      "level": "17",
+      "needExp": "204356"
+    },
+    {
+      "level": "18",
+      "needExp": "248756"
+    },
+    {
+      "level": "19",
+      "needExp": "299169"
+    },
+    {
+      "level": "20",
+      "needExp": "355980"
+    },
+    {
+      "level": "21",
+      "needExp": "419572"
+    },
+    {
+      "level": "22",
+      "needExp": "551620"
+    },
+    {
+      "level": "23",
+      "needExp": "639715"
+    },
+    {
+      "level": "24",
+      "needExp": "736735"
+    },
+    {
+      "level": "25",
+      "needExp": "843112"
+    },
+    {
+      "level": "26",
+      "needExp": "959278"
+    },
+    {
+      "level": "27",
+      "needExp": "1085665"
+    },
+    {
+      "level": "28",
+      "needExp": "1630274"
+    },
+    {
+      "level": "29",
+      "needExp": "1827774"
+    },
+    {
+      "level": "30",
+      "needExp": "2040630"
+    },
+    {
+      "level": "31",
+      "needExp": "2269418"
+    },
+    {
+      "level": "32",
+      "needExp": "2514714"
+    },
+    {
+      "level": "33",
+      "needExp": "2777094"
+    },
+    {
+      "level": "34",
+      "needExp": "3057134"
+    },
+    {
+      "level": "35",
+      "needExp": "5033115"
+    },
+    {
+      "level": "36",
+      "needExp": "5508747"
+    },
+    {
+      "level": "37",
+      "needExp": "6013461"
+    },
+    {
+      "level": "38",
+      "needExp": "6548121"
+    },
+    {
+      "level": "39",
+      "needExp": "7113591"
+    },
+    {
+      "level": "40",
+      "needExp": "7710735"
+    },
+    {
+      "level": "41",
+      "needExp": "8340417"
+    },
+    {
+      "level": "42",
+      "needExp": "12004668"
+    },
+    {
+      "level": "43",
+      "needExp": "12934468"
+    },
+    {
+      "level": "44",
+      "needExp": "13911108"
+    },
+    {
+      "level": "45",
+      "needExp": "14935740"
+    },
+    {
+      "level": "46",
+      "needExp": "16009516"
+    },
+    {
+      "level": "47",
+      "needExp": "17133588"
+    },
+    {
+      "level": "48",
+      "needExp": "18309108"
+    },
+    {
+      "level": "49",
+      "needExp": "24421535"
+    },
+    {
+      "level": "50",
+      "needExp": "26023875"
+    },
+    {
+      "level": "51",
+      "needExp": "27694845"
+    },
+    {
+      "level": "52",
+      "needExp": "29435885"
+    },
+    {
+      "level": "53",
+      "needExp": "31248435"
+    },
+    {
+      "level": "54",
+      "needExp": "33133935"
+    },
+    {
+      "level": "55",
+      "needExp": "35093825"
+    },
+    {
+      "level": "56",
+      "needExp": "44555454"
+    },
+    {
+      "level": "57",
+      "needExp": "47091042"
+    },
+    {
+      "level": "58",
+      "needExp": "49721082"
+    },
+    {
+      "level": "59",
+      "needExp": "52447302"
+    },
+    {
+      "level": "60",
+      "needExp": "55271430"
+    },
+    {
+      "level": "61",
+      "needExp": "58195194"
+    },
+    {
+      "level": "62",
+      "needExp": "61220322"
+    },
+    {
+      "level": "63",
+      "needExp": "75073299"
+    },
+    {
+      "level": "64",
+      "needExp": "78845179"
+    },
+    {
+      "level": "65",
+      "needExp": "82741365"
+    },
+    {
+      "level": "66",
+      "needExp": "86763873"
+    },
+    {
+      "level": "67",
+      "needExp": "90914719"
+    },
+    {
+      "level": "68",
+      "needExp": "95195919"
+    },
+    {
+      "level": "69",
+      "needExp": "99609489"
+    },
+    {
+      "level": "70",
+      "needExp": "119037080"
+    },
+    {
+      "level": "71",
+      "needExp": "124390632"
+    },
+    {
+      "level": "72",
+      "needExp": "129902376"
+    },
+    {
+      "level": "73",
+      "needExp": "135574616"
+    },
+    {
+      "level": "74",
+      "needExp": "141409656"
+    },
+    {
+      "level": "75",
+      "needExp": "147409800"
+    },
+    {
+      "level": "76",
+      "needExp": "153577352"
+    },
+    {
+      "level": "77",
+      "needExp": "179903943"
+    },
+    {
+      "level": "78",
+      "needExp": "187226883"
+    },
+    {
+      "level": "79",
+      "needExp": "194745933"
+    },
+    {
+      "level": "80",
+      "needExp": "202463685"
+    },
+    {
+      "level": "81",
+      "needExp": "210382731"
+    },
+    {
+      "level": "82",
+      "needExp": "218505663"
+    },
+    {
+      "level": "83",
+      "needExp": "226835073"
+    },
+    {
+      "level": "84",
+      "needExp": "235373553"
+    },
+    {
+      "level": "85",
+      "needExp": "271248550"
+    },
+    {
+      "level": "86",
+      "needExp": "281208990"
+    },
+    {
+      "level": "87",
+      "needExp": "291410370"
+    },
+    {
+      "level": "88",
+      "needExp": "301855570"
+    },
+    {
+      "level": "89",
+      "needExp": "312547470"
+    },
+    {
+      "level": "90",
+      "needExp": "323488950"
+    },
+    {
+      "level": "91",
+      "needExp": "334682890"
+    },
+    {
+      "level": "92",
+      "needExp": "346132170"
+    },
+    {
+      "level": "93",
+      "needExp": "393623637"
+    },
+    {
+      "level": "94",
+      "needExp": "406789097"
+    },
+    {
+      "level": "95",
+      "needExp": "420244935"
+    },
+    {
+      "level": "96",
+      "needExp": "433994319"
+    },
+    {
+      "level": "97",
+      "needExp": "448040417"
+    },
+    {
+      "level": "98",
+      "needExp": "462386397"
+    },
+    {
+      "level": "99",
+      "needExp": "477035427"
+    },
+    {
+      "level": "100",
+      "needExp": "491990675"
+    }
+  ],
+  "sysTips": [
+    {
+      "tid": "1",
+      "cond": "注册-没有输入手机号就点击注册按钮",
+      "text": "请输入手机号"
+    },
+    {
+      "tid": "2",
+      "cond": "注册-手机号长度不正确",
+      "text": "请输入正确的手机号"
+    },
+    {
+      "tid": "3",
+      "cond": "注册-手机号输入了其他字符",
+      "text": "请输入正确的手机号"
+    },
+    {
+      "tid": "4",
+      "cond": "注册-不符合手机号规则",
+      "text": "请输入正确的手机号"
+    },
+    {
+      "tid": "5",
+      "cond": "注册-密码过短低于6位",
+      "text": "请设置不低于6位的密码"
+    },
+    {
+      "tid": "6",
+      "cond": "注册-密码过长超过15位",
+      "text": "请设置不高于15位的密码"
+    },
+    {
+      "tid": "7",
+      "cond": "注册-密码中包含定义范围外字符",
+      "text": "不能包含特殊字符"
+    },
+    {
+      "tid": "8",
+      "cond": "登录-没有输入手机号就点击登录按钮",
+      "text": "请输入手机号"
+    },
+    {
+      "tid": "9",
+      "cond": "登录-手机号长度不正确",
+      "text": "请输入正确的手机号"
+    },
+    {
+      "tid": "10",
+      "cond": "登录-手机号输入了其他字符",
+      "text": "请输入正确的手机号"
+    },
+    {
+      "tid": "11",
+      "cond": "登录-不符合手机号规则",
+      "text": "请输入正确的手机号"
+    },
+    {
+      "tid": "12",
+      "cond": "登录-密码过短",
+      "text": "请输入不低于6位的密码"
+    },
+    {
+      "tid": "13",
+      "cond": "登录-密码过长",
+      "text": "请输入不高于15位的密码"
+    },
+    {
+      "tid": "14",
+      "cond": "登录-密码中包含定义范围外字符",
+      "text": "不能包含特殊字符"
+    },
+    {
+      "tid": "22",
+      "cond": "第三方登录失败",
+      "text": "登陆失败"
+    },
+    {
+      "tid": "15",
+      "cond": "注册-密码为纯数字",
+      "text": "密码不能为纯数字"
+    },
+    {
+      "tid": "16",
+      "cond": "登录-密码为纯数字",
+      "text": "密码不能为纯数字"
+    },
+    {
+      "tid": "17",
+      "cond": "未安装微信提示",
+      "text": "尚未安装微信客户端"
+    },
+    {
+      "tid": "18",
+      "cond": "登录-账号或密码错误",
+      "text": "账号或密码错误"
+    },
+    {
+      "tid": "19",
+      "cond": "无网络-当前无网络连接",
+      "text": "请检查网络"
+    },
+    {
+      "tid": "20",
+      "cond": "登录或注册-没输入密码",
+      "text": "请输入密码"
+    },
+    {
+      "tid": "21",
+      "cond": "登录-手机号没有注册",
+      "text": "请先注册该手机号"
+    },
+    {
+      "tid": "23",
+      "cond": "注册-没有输入验证码",
+      "text": "请输入验证码"
+    },
+    {
+      "tid": "24",
+      "cond": "注册-没有输入昵称",
+      "text": "昵称不能为空"
+    },
+    {
+      "tid": "25",
+      "cond": "注册-密码长度",
+      "text": "密码长度应为6-15位"
+    },
+    {
+      "tid": "26",
+      "cond": "注册-两次输入密码不一致",
+      "text": "两次输入密码不一致"
+    },
+    {
+      "tid": "27",
+      "cond": "注册-成功",
+      "text": "注册成功"
+    },
+    {
+      "tid": "28",
+      "cond": "注册-失败",
+      "text": "手机号已注册或验证码错误"
+    },
+    {
+      "tid": "29",
+      "cond": "发送验证码-发送失败",
+      "text": "发送失败"
+    },
+    {
+      "tid": "30",
+      "cond": "注册-密码规则不对",
+      "text": "密码规则不对"
+    },
+    {
+      "tid": "31",
+      "cond": "进入房间时在房间聊天框提示",
+      "text": "我们直播倡导绿色直播，封面和直播内容涉及色情、低俗、暴力、引诱、暴露等都会将被封停账号，同时禁止直播闹事，集会，文明直播从我做起【网警24小时在线巡查】"
+    }
+  ],
+  "sysItem": [
+    {
+      "itemId": "1",
+      "itemName": "飞虎流星"
+    }
+  ],
+  "sysMount": [
+    {
+      "id": "1",
+      "name": "山地车",
+      "level": "1",
+      "goodsId": "39",
+      "src": "carimages/car_three_car.png",
+      "text": "【$USER$】驾驶【山地车】进入直播间"
+    },
+    {
+      "id": "2",
+      "name": "摩托车",
+      "level": "2",
+      "goodsId": "40",
+      "src": "carimages/car_motorcycle.png",
+      "text": ""
+    },
+    {
+      "id": "3",
+      "name": "普通轿车",
+      "level": "3",
+      "goodsId": "41",
+      "src": "carimages/car_cars.png",
+      "text": ""
+    },
+    {
+      "id": "4",
+      "name": "豪华轿车",
+      "level": "4",
+      "goodsId": "42",
+      "src": "carimages/car_luxury_cars.png",
+      "text": ""
+    },
+    {
+      "id": "5",
+      "name": "赛车",
+      "level": "5",
+      "goodsId": "43",
+      "src": "carimages/car_racing_bicycle.png",
+      "text": ""
+    },
+    {
+      "id": "6",
+      "name": "F1方程式赛车",
+      "level": "6",
+      "goodsId": "44",
+      "src": "carimages/car_formula1racing.png",
+      "text": ""
+    },
+    {
+      "id": "7",
+      "name": "坦克",
+      "level": "7",
+      "goodsId": "45",
+      "src": "carimages/car_tanks.png",
+      "text": ""
+    },
+    {
+      "id": "8",
+      "name": "直升飞机",
+      "level": "8",
+      "goodsId": "46",
+      "src": "carimages/car_helicopter.png",
+      "text": ""
+    },
+    {
+      "id": "9",
+      "name": "战斗机",
+      "level": "9",
+      "goodsId": "47",
+      "src": "carimages/car_fighter.png",
+      "text": ""
+    },
+    {
+      "id": "10",
+      "name": "飞船",
+      "level": "11",
+      "goodsId": "48",
+      "src": "carimages/car_spacecraft.png",
+      "text": ""
+    },
+    {
+      "id": "11",
+      "name": "周星专属座驾",
+      "level": "11",
+      "goodsId": "0",
+      "src": "carimages/car_flying_tiger_new.png",
+      "text": ""
+    },
+    {
+      "id": "12",
+      "name": "超管专属座驾",
+      "level": "11",
+      "goodsId": "0",
+      "src": "carimages/car_flying_tiger.png",
+      "text": ""
+    }
+  ],
+  "sysGameBet": [
+    {
+      "levelStart": "6",
+      "levelEnd": "10",
+      "maxBankerCnt": "10",
+      "maxBankerBet": "10000",
+      "maxPlayerCnt": "20",
+      "maxPlayerBat": "2000"
+    },
+    {
+      "levelStart": "11",
+      "levelEnd": "15",
+      "maxBankerCnt": "25",
+      "maxBankerBet": "20000",
+      "maxPlayerCnt": "50",
+      "maxPlayerBat": "4000"
+    },
+    {
+      "levelStart": "16",
+      "levelEnd": "20",
+      "maxBankerCnt": "50",
+      "maxBankerBet": "25000",
+      "maxPlayerCnt": "75",
+      "maxPlayerBat": "10000"
+    },
+    {
+      "levelStart": "21",
+      "levelEnd": "25",
+      "maxBankerCnt": "75",
+      "maxBankerBet": "50000",
+      "maxPlayerCnt": "100",
+      "maxPlayerBat": "20000"
+    },
+    {
+      "levelStart": "26",
+      "levelEnd": "30",
+      "maxBankerCnt": "100",
+      "maxBankerBet": "100000",
+      "maxPlayerCnt": "200",
+      "maxPlayerBat": "40000"
+    },
+    {
+      "levelStart": "31",
+      "levelEnd": "34",
+      "maxBankerCnt": "200",
+      "maxBankerBet": "200000",
+      "maxPlayerCnt": "300",
+      "maxPlayerBat": "80000"
+    },
+    {
+      "levelStart": "35",
+      "levelEnd": "41",
+      "maxBankerCnt": "300",
+      "maxBankerBet": "400000",
+      "maxPlayerCnt": "400",
+      "maxPlayerBat": "160000"
+    },
+    {
+      "levelStart": "42",
+      "levelEnd": "100",
+      "maxBankerCnt": "400",
+      "maxBankerBet": "500000",
+      "maxPlayerCnt": "500",
+      "maxPlayerBat": "200000"
+    },
+    {
+      "levelStart": "0",
+      "levelEnd": "5",
+      "maxBankerCnt": "0",
+      "maxBankerBet": "0",
+      "maxPlayerCnt": "0",
+      "maxPlayerBat": "0"
+    }
+  ],
+  "sysErrorMsg": {
+    "ServerError": "系统错误",
+    "ServerTimeout": "请求超时",
+    "UnknownError": "未知及无错误码的错误",
+    "RequestFailed": "IAP错误",
+    "APINotFound": "API不存在",
+    "ParamError": "参数错误",
+    "NotLogin": "未登录禁用的API",
+    "GuestForbidden": "游客禁用的API",
+    "CheckSigFailed": "API签名检验失败",
+    "CheckVeriCodeFailed": "短信验证码检验失败",
+    "NotRegistered": "手机号未注册",
+    "VersionError": "版本错误",
+    "InvalidContent": "长度超限或内容违规",
+    "Locked": "交易正在处理",
+    "TokenError": "连接socket时token错误",
+    "LoginFailed": "账号或密码错误",
+    "CreateUserFailed": "注册失败，手机号或openid已存在",
+    "UserPassError": "原密码错误",
+    "UserExist": "该手机号已占用",
+    "ErrSameNickname": "昵称已存在",
+    "NotLiveMaster": "不是主播，没有权限",
+    "AlreadyStartLive": "已在开播，重复开播",
+    "LiveNotOpen": "未开播",
+    "UserNotJoinRoom": "未进入房间",
+    "NotLiveMgr": "不是场控，没有权限",
+    "BannedInRoom": "已被禁言",
+    "UserNotFound": "用户不存在",
+    "UserOffline": "用户离线",
+    "BindPhoneFailed": "绑定失败，已绑定宝手机或手机已被绑定",
+    "NotBindPhone": "未绑定手机",
+    "InvalidNickname": "无效的昵称",
+    "ModifyMaxLimit": "只能修改一次",
+    "UnableFollowSelf": "不能关注自己",
+    "AlreadyFollowed": "已关注过",
+    "NotFollowed": "尚未关注",
+    "AlreadySigned": "今天已签到",
+    "UnableBlockSelf": "不能拉黑自己",
+    "AlreadyBlocked": "已拉黑",
+    "NotInBlacklist": "尚未拉黑",
+    "AlreadyBeBlocked": "已被拉黑",
+    "InfoNotFound": "相关信息不存在",
+    "InsufficientBalance": "余额不足，请充值",
+    "OutOfStock": "购买达上限",
+    "NoEnoughGift": "礼物数量不足",
+    "AccountNotExist": "靓号不存在",
+    "FeedNotFound": "动态不存在",
+    "AlreadyLiked": "已点赞过",
+    "NotLiked": "尚未赞过",
+    "NotFeedCreater": "非作者，无权操作",
+    "TradeExpired": "交易已经过期",
+    "TradeForbidden": "您不是交易对象",
+    "NoAlipayBinding": "未绑定支付宝账号",
+    "NotOwner": "只能关闭自己的订单",
+    "UserNotCertified": "未实名认证",
+    "NotCertifiedName": "不是实名认证时的",
+    "AlipayAlreayBound": "重复绑定",
+    "HuBaoHudouNotEnough": "虎豆不足",
+    "HuBaoCntNotEnough": "人次数不足",
+    "MaxHubaoAddressCnt": "最多新增5条收货信息",
+    "AddressNotFound": "修改失败",
+    "SignError": "签名错误",
+    "Expired": "该链接已失效",
+    "UnderDeveloped": "正在开发该接口",
+    "ExtParamNotEnough": "其他字段不足",
+    "ExtParamError": "其他字段值错误",
+    "BannedSendChat": "",
+    "BannedChat": "已禁言",
+    "BannedLive": "已禁播",
+    "BannedJoinRoom": "无权限观看",
+    "BannedLogin": "禁止登录",
+    "BannedMac": "禁止登录",
+    "GameStageError": "未在竞猜时间，下局再来",
+    "PreemptNotOpen": "抢权限倒计时中",
+    "PreemptFailed": "抢权限失败",
+    "BetPoolNotEnough": "庄家押注不够，无法押注",
+    "MaxBankerCnt": "今日互动次数超出等级限制",
+    "MaxBankerBet": "互动虎币超出等级限制",
+    "MaxPlayerCnt": "今日竞猜次数超出等级限制",
+    "MaxPlayerBat": "竞猜虎币超出等级限制",
+    "ServerInternalError": "服务器内部错误",
+    "MaxRoomMgrCnt": "已超出最大房管数量",
+    "HasMasterLogin": "已在PC主播端登录",
+    "HaveOwner": "玩法权限已经被其他主播抢到",
+    "ForbidPreemptTwoGame": "不能同时抢两个玩法权限",
+    "SmsError": "获取短信验证码失败",
+    "EncashNonInteger": "请输入100整数倍的金虎币",
+    "EncashTooLittle": "请输入大于10000金虎币",
+    "NotEnoughGHB": "金虎币不足",
+    "TargetIsLiveMgr": "您不能禁言其他场控",
+    "IsSuperMgr": "您不能取消超管权限",
+    "TargetIsGuard": "你不能禁言本房间的守护",
+    "TargetIsVip": "你不能禁言VIP",
+    "IsNotVip": "只有vip用户才能购买",
+    "RepeatPostMV": "该需求已经提交过MV"
+  },
+  "sysTagNew": [
+    {
+      "id": "1",
+      "labelName": "幸运",
+      "icon": "1.png"
+    },
+    {
+      "id": "2",
+      "labelName": "VIP专属",
+      "icon": "1513219168.png"
+    }
+  ],
+  "sysGoodsNew": [
+    {
+      "id": "1",
+      "name": "小黄瓜",
+      "objType": "1",
+      "objId": "1",
+      "price": "60",
+      "realPrice": "60",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "1.png",
+      "tag": "1",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1700",
+      "t": "1504772148",
+      "tagIcon": "1.png"
+    },
+    {
+      "id": "2",
+      "name": "香蕉棒",
+      "objType": "1",
+      "objId": "2",
+      "price": "80",
+      "realPrice": "80",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "2.png",
+      "tag": "1",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1600",
+      "t": "1504772139",
+      "tagIcon": "1.png"
+    },
+    {
+      "id": "3",
+      "name": "红玫瑰",
+      "objType": "1",
+      "objId": "3",
+      "price": "520",
+      "realPrice": "520",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "3.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1300",
+      "t": "1504772091",
+      "tagIcon": ""
+    },
+    {
+      "id": "4",
+      "name": "迪奥",
+      "objType": "1",
+      "objId": "4",
+      "price": "990",
+      "realPrice": "990",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "4.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1000",
+      "t": "1504772056",
+      "tagIcon": ""
+    },
+    {
+      "id": "5",
+      "name": "蛋糕",
+      "objType": "1",
+      "objId": "5",
+      "price": "660",
+      "realPrice": "660",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "5.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1200",
+      "t": "1504772083",
+      "tagIcon": ""
+    },
+    {
+      "id": "6",
+      "name": "吻",
+      "objType": "1",
+      "objId": "6",
+      "price": "520",
+      "realPrice": "520",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "6.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1300",
+      "t": "1504772110",
+      "tagIcon": ""
+    },
+    {
+      "id": "7",
+      "name": "皇冠",
+      "objType": "1",
+      "objId": "7",
+      "price": "880",
+      "realPrice": "880",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "7.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1100",
+      "t": "1504772064",
+      "tagIcon": ""
+    },
+    {
+      "id": "8",
+      "name": "爱心",
+      "objType": "1",
+      "objId": "8",
+      "price": "100",
+      "realPrice": "100",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "8.png",
+      "tag": "1",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1500",
+      "t": "1504772129",
+      "tagIcon": "1.png"
+    },
+    {
+      "id": "9",
+      "name": "摩天轮",
+      "objType": "1",
+      "objId": "9",
+      "price": "5200",
+      "realPrice": "5200",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "9.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "800",
+      "t": "1504772016",
+      "tagIcon": ""
+    },
+    {
+      "id": "10",
+      "name": "金话筒",
+      "objType": "1",
+      "objId": "10",
+      "price": "6990",
+      "realPrice": "6990",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "10.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "700",
+      "t": "1504772009",
+      "tagIcon": ""
+    },
+    {
+      "id": "11",
+      "name": "钻戒",
+      "objType": "1",
+      "objId": "11",
+      "price": "9990",
+      "realPrice": "9990",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "11.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "600",
+      "t": "1504771999",
+      "tagIcon": ""
+    },
+    {
+      "id": "12",
+      "name": "高射炮",
+      "objType": "1",
+      "objId": "12",
+      "price": "41900",
+      "realPrice": "41900",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "12.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "100",
+      "t": "1504771952",
+      "tagIcon": ""
+    },
+    {
+      "id": "13",
+      "name": "游轮",
+      "objType": "1",
+      "objId": "13",
+      "price": "13140",
+      "realPrice": "13140",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "13.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "400",
+      "t": "1504771977",
+      "tagIcon": ""
+    },
+    {
+      "id": "14",
+      "name": "宾利跑车",
+      "objType": "1",
+      "objId": "14",
+      "price": "18888",
+      "realPrice": "18888",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "14.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "300",
+      "t": "1504771969",
+      "tagIcon": ""
+    },
+    {
+      "id": "15",
+      "name": "DA飞机",
+      "objType": "1",
+      "objId": "15",
+      "price": "19800",
+      "realPrice": "19800",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "15.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "200",
+      "t": "1504771962",
+      "tagIcon": ""
+    },
+    {
+      "id": "16",
+      "name": "点歌卡",
+      "objType": "1",
+      "objId": "16",
+      "price": "500",
+      "realPrice": "500",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "16.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1400",
+      "t": "1504772120",
+      "tagIcon": ""
+    },
+    {
+      "id": "17",
+      "name": "巧克力",
+      "objType": "1",
+      "objId": "17",
+      "price": "60",
+      "realPrice": "60",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "17.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1800",
+      "t": "1504772161",
+      "tagIcon": ""
+    },
+    {
+      "id": "18",
+      "name": "向日葵",
+      "objType": "1",
+      "objId": "18",
+      "price": "20",
+      "realPrice": "20",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "18.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1900",
+      "t": "1513256437",
+      "tagIcon": ""
+    },
+    {
+      "id": "19",
+      "name": "香水",
+      "objType": "1",
+      "objId": "19",
+      "price": "1800",
+      "realPrice": "1800",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "19.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "900",
+      "t": "1504772036",
+      "tagIcon": ""
+    },
+    {
+      "id": "20",
+      "name": "山地车",
+      "objType": "2",
+      "objId": "1",
+      "price": "3000",
+      "realPrice": "3000",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "20.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "1000",
+      "t": "1504772305",
+      "tagIcon": ""
+    },
+    {
+      "id": "21",
+      "name": "摩托车",
+      "objType": "2",
+      "objId": "2",
+      "price": "5000",
+      "realPrice": "5000",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "21.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "900",
+      "t": "1504772298",
+      "tagIcon": ""
+    },
+    {
+      "id": "22",
+      "name": "普通轿车",
+      "objType": "2",
+      "objId": "3",
+      "price": "12800",
+      "realPrice": "12800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "22.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "800",
+      "t": "1504772291",
+      "tagIcon": ""
+    },
+    {
+      "id": "23",
+      "name": "豪华轿车",
+      "objType": "2",
+      "objId": "4",
+      "price": "22800",
+      "realPrice": "22800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "23.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "700",
+      "t": "1504772283",
+      "tagIcon": ""
+    },
+    {
+      "id": "24",
+      "name": "赛车",
+      "objType": "2",
+      "objId": "5",
+      "price": "38800",
+      "realPrice": "38800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "24.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "600",
+      "t": "1504772276",
+      "tagIcon": ""
+    },
+    {
+      "id": "25",
+      "name": "F1方程式赛车",
+      "objType": "2",
+      "objId": "6",
+      "price": "48800",
+      "realPrice": "48800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "25.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "500",
+      "t": "1504772270",
+      "tagIcon": ""
+    },
+    {
+      "id": "26",
+      "name": "坦克",
+      "objType": "2",
+      "objId": "7",
+      "price": "58800",
+      "realPrice": "58800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "26.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "400",
+      "t": "1504772263",
+      "tagIcon": ""
+    },
+    {
+      "id": "27",
+      "name": "直升飞机",
+      "objType": "2",
+      "objId": "8",
+      "price": "68800",
+      "realPrice": "68800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "27.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "300",
+      "t": "1504772257",
+      "tagIcon": ""
+    },
+    {
+      "id": "28",
+      "name": "战斗机",
+      "objType": "2",
+      "objId": "9",
+      "price": "88800",
+      "realPrice": "88800",
+      "enableYHB": "0",
+      "needVip": "0",
+      "show": "2",
+      "icon": "28.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "200",
+      "t": "1504772249",
+      "tagIcon": ""
+    },
+    {
+      "id": "29",
+      "name": "飞船",
+      "objType": "2",
+      "objId": "10",
+      "price": "168800",
+      "realPrice": "168800",
+      "enableYHB": "0",
+      "needVip": "1",
+      "show": "2",
+      "icon": "29.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "100",
+      "t": "1510745047",
+      "tagIcon": ""
+    },
+    {
+      "id": "30",
+      "name": "水晶鞋",
+      "objType": "1",
+      "objId": "21",
+      "price": "12800",
+      "realPrice": "12800",
+      "enableYHB": "1",
+      "needVip": "0",
+      "show": "1",
+      "icon": "35.png",
+      "tag": "0",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070",
+      "sortOrder": "500",
+      "t": "1512008481",
+      "tagIcon": ""
+    },
+    {
+      "id": "31",
+      "name": "VIP专属座驾-狼",
+      "objType": "2",
+      "objId": "15",
+      "price": "28800",
+      "realPrice": "28800",
+      "enableYHB": "0",
+      "needVip": "1",
+      "show": "2",
+      "icon": "1513216616.png",
+      "tag": "2",
+      "shelfBegin": "1513216533",
+      "shelfEnd": "1514685333",
+      "sortOrder": "1901",
+      "t": "1513219199",
+      "tagIcon": "1513219168.png"
+    }
+  ],
+  "sysGiftNew": [
+    {
+      "id": "1",
+      "name": "小黄瓜",
+      "price": "60",
+      "incomePercent": "350",
+      "isAnimation": "0",
+      "enableVip": "1",
+      "tips": "赠送主播幸运礼物可参加幸运彩池（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "1.png",
+      "animName": "",
+      "sortOrder": "180",
+      "t": "1512984442",
+      "tagIcon": "1.png",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "2",
+      "name": "香蕉棒",
+      "price": "80",
+      "incomePercent": "350",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "赠送主播幸运礼物可参加幸运彩池（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "2.png",
+      "animName": "",
+      "sortOrder": "170",
+      "t": "1513129316",
+      "tagIcon": "1.png",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "3",
+      "name": "红玫瑰",
+      "price": "520",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "爱你每一天（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "3.png",
+      "animName": "",
+      "sortOrder": "130",
+      "t": "1504854058",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "4",
+      "name": "迪奥",
+      "price": "990",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "爱你长长久久（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "4.png",
+      "animName": "",
+      "sortOrder": "100",
+      "t": "1504854109",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "5",
+      "name": "蛋糕",
+      "price": "660",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "生日快乐（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "1513082735.png",
+      "animName": "",
+      "sortOrder": "120",
+      "t": "1513082737",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "6",
+      "name": "吻",
+      "price": "520",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "喜欢你（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "6.png",
+      "animName": "",
+      "sortOrder": "140",
+      "t": "1504854042",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "7",
+      "name": "皇冠",
+      "price": "880",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "你是我的女王大人（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "7.png",
+      "animName": "",
+      "sortOrder": "110",
+      "t": "1504854088",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "8",
+      "name": "爱心",
+      "price": "100",
+      "incomePercent": "350",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "赠送主播幸运礼物可参加幸运彩池（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "8.png",
+      "animName": "",
+      "sortOrder": "160",
+      "t": "1508221106",
+      "tagIcon": "1.png",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "9",
+      "name": "摩天轮",
+      "price": "5200",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "幸福摩天轮，浪漫只属于你（赠送可触发酷炫特效）",
+      "icon": "9.png",
+      "animName": "wheel_123456.zip",
+      "sortOrder": "80",
+      "t": "1504854146",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "10",
+      "name": "金话筒",
+      "price": "6990",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "K歌之王，为你鼓掌（赠送可触发酷炫特效）",
+      "icon": "10.png",
+      "animName": "microphone_123456.zip",
+      "sortOrder": "70",
+      "t": "1504854162",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "11",
+      "name": "钻戒",
+      "price": "9990",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "钻戒代表我永恒的心（赠送可触发酷炫特效）",
+      "icon": "11.png",
+      "animName": "ring_123456.zip",
+      "sortOrder": "60",
+      "t": "1504854183",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "12",
+      "name": "高射炮",
+      "price": "41900",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "霸气告白，送你上热门（赠送可触发酷炫特效和全站飘屏）",
+      "icon": "12.png",
+      "animName": "gun_123456.zip",
+      "sortOrder": "10",
+      "t": "1513252958",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "13",
+      "name": "游轮",
+      "price": "13140",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "带你环游全世界（赠送可触发酷炫特效）",
+      "icon": "13.png",
+      "animName": "cruise_123456.zip",
+      "sortOrder": "40",
+      "t": "1504854225",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "14",
+      "name": "宾利跑车",
+      "price": "18888",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "带你装逼带你飞（赠送可触发酷炫特效）",
+      "icon": "14.png",
+      "animName": "binlicar_123456.zip",
+      "sortOrder": "30",
+      "t": "1504854248",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "15",
+      "name": "DA飞机",
+      "price": "19800",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "带你遨游星际（赠送可触发酷炫特效）",
+      "icon": "15.png",
+      "animName": "airplane_123456.zip",
+      "sortOrder": "20",
+      "t": "1504854264",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "16",
+      "name": "点歌卡",
+      "price": "500",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "来首歌吧~（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "16.png",
+      "animName": "",
+      "sortOrder": "150",
+      "t": "1504854029",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "17",
+      "name": "巧克力",
+      "price": "60",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "爱你在心口中（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "17.png",
+      "animName": "",
+      "sortOrder": "190",
+      "t": "1504853936",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "18",
+      "name": "向日葵",
+      "price": "20",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "你是我的太阳女神（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "18.png",
+      "animName": "",
+      "sortOrder": "200",
+      "t": "1513256669",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "19",
+      "name": "香水",
+      "price": "1800",
+      "incomePercent": "400",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "有品位有格调（一次赠送520个或1314个可触发特效和全站飘屏）",
+      "icon": "19.png",
+      "animName": "",
+      "sortOrder": "90",
+      "t": "1504854126",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    },
+    {
+      "id": "20",
+      "name": "飞虎流星",
+      "price": "0",
+      "incomePercent": "0",
+      "isAnimation": "0",
+      "enableVip": "0",
+      "tips": "特殊礼物，赠送主播可参加幸运彩池（一次赠送520个或1314个可触发全站飘屏）",
+      "icon": "20.png",
+      "animName": "",
+      "sortOrder": "10",
+      "t": "1505355001",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "0"
+    },
+    {
+      "id": "21",
+      "name": "水晶鞋",
+      "price": "12800",
+      "incomePercent": "400",
+      "isAnimation": "1",
+      "enableVip": "0",
+      "tips": "高贵，是一种态度（赠送可触发酷炫特效）",
+      "icon": "21.png",
+      "animName": "crystal_123456.zip",
+      "sortOrder": "50",
+      "t": "1512008231",
+      "tagIcon": "",
+      "shelfBegin": "0",
+      "shelfEnd": "1819767070"
+    }
+  ],
+  "sysMountNew": [
+    {
+      "id": "1",
+      "name": "山地车",
+      "effectSec": "2592000",
+      "level": "1",
+      "isAnimation": "1",
+      "icon": "1.png",
+      "animName": "binlicar_123456.zip",
+      "t": "1513253237",
+      "tagIcon": ""
+    },
+    {
+      "id": "2",
+      "name": "摩托车",
+      "effectSec": "2592000",
+      "level": "2",
+      "isAnimation": "0",
+      "icon": "2.png",
+      "animName": "binlicar_123456.zip",
+      "t": "1504774335",
+      "tagIcon": ""
+    },
+    {
+      "id": "3",
+      "name": "普通轿车",
+      "effectSec": "2592000",
+      "level": "3",
+      "isAnimation": "0",
+      "icon": "3.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "4",
+      "name": "豪华轿车",
+      "effectSec": "2592000",
+      "level": "4",
+      "isAnimation": "0",
+      "icon": "4.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "5",
+      "name": "赛车",
+      "effectSec": "2592000",
+      "level": "5",
+      "isAnimation": "0",
+      "icon": "5.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "6",
+      "name": "F1方程式赛车",
+      "effectSec": "2592000",
+      "level": "6",
+      "isAnimation": "0",
+      "icon": "6.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "7",
+      "name": "坦克",
+      "effectSec": "2592000",
+      "level": "7",
+      "isAnimation": "0",
+      "icon": "7.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "8",
+      "name": "直升飞机",
+      "effectSec": "2592000",
+      "level": "8",
+      "isAnimation": "0",
+      "icon": "8.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "9",
+      "name": "战斗机",
+      "effectSec": "2592000",
+      "level": "9",
+      "isAnimation": "0",
+      "icon": "9.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "10",
+      "name": "飞船",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "0",
+      "icon": "10.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "11",
+      "name": "周星专属座驾",
+      "effectSec": "604800",
+      "level": "11",
+      "isAnimation": "0",
+      "icon": "1513220887.png",
+      "animName": "",
+      "t": "1513220940",
+      "tagIcon": ""
+    },
+    {
+      "id": "12",
+      "name": "超管专属座驾",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "0",
+      "icon": "12.png",
+      "animName": "",
+      "t": "0",
+      "tagIcon": ""
+    },
+    {
+      "id": "13",
+      "name": "银虎",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "1",
+      "icon": "13.png",
+      "animName": "binlicar_123456.zip",
+      "t": "1513253319",
+      "tagIcon": ""
+    },
+    {
+      "id": "14",
+      "name": "金虎",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "1",
+      "icon": "14.png",
+      "animName": "",
+      "t": "1513132873",
+      "tagIcon": ""
+    },
+    {
+      "id": "15",
+      "name": "VIP专属座驾-狼",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "1",
+      "icon": "1513083293.png",
+      "animName": "",
+      "t": "1513083362",
+      "tagIcon": "1513219168.png"
+    },
+    {
+      "id": "16",
+      "name": "VIP专属座驾-豹",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "1",
+      "icon": "1513083398.png",
+      "animName": "",
+      "t": "1513083405",
+      "tagIcon": ""
+    },
+    {
+      "id": "17",
+      "name": "VIP专属座驾-鹿",
+      "effectSec": "2592000",
+      "level": "11",
+      "isAnimation": "1",
+      "icon": "1513083428.png",
+      "animName": "",
+      "t": "1513083434",
+      "tagIcon": ""
+    }
+  ],
+  "sysConfig": {
+    "CosGiftRootPath": "https://img.feihutv.cn/gift/",
+    "CosGoodsRootPath": "https://img.feihutv.cn/shopGoods/",
+    "CosRootPath": "https://img.feihutv.cn/",
+    "CosTagRootPath": "https://img.feihutv.cn/tag/",
+    "CosMountRootPath": "https://img.feihutv.cn/mount/",
+    "CosAnimationRootPath": "https://img.feihutv.cn/gift/animation/",
+    "CosAnimtionTemplate520": "https://img.feihutv.cn/gift/animation/cucumber520_1234567.zip",
+    "CosAnimtionTemplate1314": "https://img.feihutv.cn/gift/animation/cucumber1314_1234567.zip",
+    "CosAnimationLandRootPath": "https://img.feihutv.cn/gift/animation_land/",
+    "CosGiftTemplate1314": "https://img.feihutv.cn/gift/pic/animation1314_3.zip",
+    "CosGiftTemplate520": "https://img.feihutv.cn/gift/pic/animation520_3.zip",
+    "CosMountLandRootPath": "https://img.feihutv.cn/mount/land/",
+    "PrivilegeDesc1": "动画专属座驾，酷炫的入场方式",
+    "PrivilegeDesc2": "VIP专属徽章，身份的象征",
+    "PrivilegeDesc3": "给你不一样的动画入场效果",
+    "PrivilegeDesc4": "聊天飘屏显示，更醒目",
+    "PrivilegeDesc5": "开通即赠送小喇叭",
+    "PrivilegeDesc6": "VIP专属特效礼物，与别人不同",
+    "PrivilegeDesc7": "VIP尊享下载MV特权",
+    "PrivilegeDesc8": "额外每天赠送竞猜互动次数",
+    "PrivilegeDesc9": "防主播场控禁言、踢出直播间",
+    "PrivilegeDesc10": "赠送礼物额外增加经验值",
+    "CosVipIconRootPath": "https://img.feihutv.cn/icon/VIP/",
+    "CosLuckGiftIconRootPath": "https://img.feihutv.cn/icon/LuckGift/",
+    "WeekStarHtml": "https://img.feihutv.cn/uploadHtml/weekStarShow.html",
+    "CosAnimtionTemplate1314_android": "https://img.feihutv.cn/gift/animation/cucumber1314_android.zip",
+    "MvShareUrl": "https://img.feihutv.cn/uploadHtml/mvShare.html",
+    "RoomShareUrl": "https://img.feihutv.cn/uploadHtml/register.html",
+    "MvDownUrlValidityTime": "3600",
+    "RankRootPath": "https://img.feihutv.cn/Level_v2/",
+    "MvInstructionUrl": "https://img.feihutv.cn/uploadHtml/mvInstruction.html",
+    "MvIssueMinHb": "300000"
+  },
+  "sysSignAward": [
+    {
+      "day": "1",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":10},{\"type\":5,\"id\":0,\"cnt\":10}]"
+    },
+    {
+      "day": "2",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":12},{\"type\":5,\"id\":0,\"cnt\":12}]"
+    },
+    {
+      "day": "3",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":14},{\"type\":5,\"id\":0,\"cnt\":14}]"
+    },
+    {
+      "day": "4",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":16},{\"type\":5,\"id\":0,\"cnt\":16},{\"type\":1,\"id\":\"20\",\"cnt\":1}]"
+    },
+    {
+      "day": "5",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":20},{\"type\":5,\"id\":0,\"cnt\":18},{\"type\":1,\"id\":\"20\",\"cnt\":2}]"
+    },
+    {
+      "day": "6",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":25},{\"type\":5,\"id\":0,\"cnt\":20},{\"type\":1,\"id\":\"20\",\"cnt\":3}]"
+    },
+    {
+      "day": "7",
+      "goods": "[{\"type\":4,\"id\":0,\"cnt\":30},{\"type\":5,\"id\":0,\"cnt\":25},{\"type\":1,\"id\":\"20\",\"cnt\":4}]"
+    }
+  ],
+  "sysVipGoods": [
+    {
+      "goodsId": "1",
+      "goodsName": "首次开通 30天",
+      "duration": "2592000",
+      "czz": "100",
+      "xiaolaba": "2",
+      "hb": "6000",
+      "recommend": "1",
+      "discount": "0",
+      "vipMountDays": "7",
+      "sortOrder": "50"
+    },
+    {
+      "goodsId": "2",
+      "goodsName": "月卡VIP  30天",
+      "duration": "2592000",
+      "czz": "100",
+      "xiaolaba": "2",
+      "hb": "8000",
+      "recommend": "0",
+      "discount": "1",
+      "vipMountDays": "7",
+      "sortOrder": "150"
+    },
+    {
+      "goodsId": "3",
+      "goodsName": "季卡VIP  90天",
+      "duration": "7776000",
+      "czz": "300",
+      "xiaolaba": "5",
+      "hb": "21000",
+      "recommend": "0",
+      "discount": "0",
+      "vipMountDays": "14",
+      "sortOrder": "200"
+    },
+    {
+      "goodsId": "4",
+      "goodsName": "年卡VIP  365天",
+      "duration": "31536000",
+      "czz": "800",
+      "xiaolaba": "12",
+      "hb": "80000",
+      "recommend": "0",
+      "discount": "0",
+      "vipMountDays": "30",
+      "sortOrder": "250"
+    }
+  ],
+  "sysVip": [
+    {
+      "vip": "1",
+      "needCzz": "1",
+      "day": "10",
+      "watch30min": "10",
+      "online1hour": "10",
+      "giftExpAdd": "20",
+      "gameCnt": "50",
+      "vipMountId": "15"
+    },
+    {
+      "vip": "2",
+      "needCzz": "1200",
+      "day": "15",
+      "watch30min": "15",
+      "online1hour": "15",
+      "giftExpAdd": "22",
+      "gameCnt": "50",
+      "vipMountId": "15"
+    },
+    {
+      "vip": "3",
+      "needCzz": "3600",
+      "day": "20",
+      "watch30min": "20",
+      "online1hour": "20",
+      "giftExpAdd": "24",
+      "gameCnt": "100",
+      "vipMountId": "16"
+    },
+    {
+      "vip": "4",
+      "needCzz": "7200",
+      "day": "25",
+      "watch30min": "25",
+      "online1hour": "25",
+      "giftExpAdd": "26",
+      "gameCnt": "100",
+      "vipMountId": "16"
+    },
+    {
+      "vip": "5",
+      "needCzz": "12000",
+      "day": "30",
+      "watch30min": "30",
+      "online1hour": "30",
+      "giftExpAdd": "28",
+      "gameCnt": "150",
+      "vipMountId": "17"
+    },
+    {
+      "vip": "6",
+      "needCzz": "21600",
+      "day": "35",
+      "watch30min": "35",
+      "online1hour": "35",
+      "giftExpAdd": "30",
+      "gameCnt": "150",
+      "vipMountId": "17"
+    }
+  ],
+  "sysLaunchTag": [
+    {
+      "id": "8",
+      "name": "关注",
+      "type": "1",
+      "default": "0",
+      "sort": "201",
+      "tag": "8",
+      "defaultTag": "0"
+    },
+    {
+      "id": "5",
+      "name": "经典",
+      "type": "1",
+      "default": "1",
+      "sort": "200",
+      "tag": "5",
+      "defaultTag": "1"
+    },
+    {
+      "id": "6",
+      "name": "手机",
+      "type": "1",
+      "default": "0",
+      "sort": "199",
+      "tag": "6",
+      "defaultTag": "0"
+    },
+    {
+      "id": "7",
+      "name": "最新",
+      "type": "1",
+      "default": "0",
+      "sort": "198",
+      "tag": "7",
+      "defaultTag": "0"
+    },
+    {
+      "id": "1",
+      "name": "颜值",
+      "type": "2",
+      "default": "0",
+      "sort": "100",
+      "tag": "1",
+      "defaultTag": "0"
+    },
+    {
+      "id": "2",
+      "name": "新秀",
+      "type": "2",
+      "default": "0",
+      "sort": "99",
+      "tag": "2",
+      "defaultTag": "0"
+    },
+    {
+      "id": "3",
+      "name": "才艺",
+      "type": "2",
+      "default": "0",
+      "sort": "98",
+      "tag": "3",
+      "defaultTag": "0"
+    },
+    {
+      "id": "4",
+      "name": "型男",
+      "type": "2",
+      "default": "0",
+      "sort": "97",
+      "tag": "4",
+      "defaultTag": "0"
+    }
+  ],
+  "sysGuardGoods": [
+    {
+      "goodsId": "1",
+      "goodsName": "月卡/30天",
+      "duration": "2592000",
+      "yinhu": "{\"hb\":30000,\"xiaolaba\":2}",
+      "jinhu": "{\"hb\":50000,\"xiaolaba\":3}"
+    },
+    {
+      "goodsId": "2",
+      "goodsName": "年卡/365天",
+      "duration": "31536000",
+      "yinhu": "{\"hb\":330000,\"xiaolaba\":25,\"orig\":360000}",
+      "jinhu": "{\"hb\":550000,\"xiaolaba\":38,\"orig\":600000}"
+    }
+  ],
+  "sysFontColor": [
+    {
+      "key": "nickname",
+      "keyName": "昵称文字",
+      "phone": "ADADAD",
+      "pc": "FF0000"
+    },
+    {
+      "key": "normalChat",
+      "keyName": "普通用户聊天文字",
+      "phone": "FFFFFF",
+      "pc": "404040"
+    },
+    {
+      "key": "vipChat",
+      "keyName": "vip或守护用户聊天文字",
+      "phone": "006000",
+      "pc": "FFB90F"
+    }
+  ]
+}

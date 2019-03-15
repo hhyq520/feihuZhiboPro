@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/app_white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_head_friendlist"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/face" />
+
+        <ImageView
+            android:id="@+id/iv_level_friendlist"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rank_1" />
+
+        <ImageView
+            android:id="@+id/iv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_vip_1" />
+
+        <ImageView
+            android:id="@+id/iv_liang"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_beauti_logo" />
+
+        <TextView
+            android:id="@+id/tv_nickname_friendlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="muse"
+            android:textColor="@color/textNormal"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

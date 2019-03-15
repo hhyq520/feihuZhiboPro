@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_white">
+
+        <RadioGroup
+            android:id="@+id/rg_bd"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tab_bd_shape"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bd_rb1"
+                style="@style/bangdan_tab_rb"
+                android:background="@drawable/radio_bg_left"
+                android:text="排行榜"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/btn_sure_forbidden"/>
+
+
+            <RadioButton
+                android:id="@+id/bd_rb2"
+                style="@style/bangdan_tab_rb"
+                android:background="@drawable/radio_bg"
+                android:text="贡献榜"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/btn_sure_forbidden"/>
+
+
+            <RadioButton
+                android:id="@+id/bd_rb3"
+                style="@style/bangdan_tab_rb"
+                android:background="@drawable/radio_bg"
+                android:text="幸运榜"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/btn_sure_forbidden"/>
+
+            <RadioButton
+                android:id="@+id/bd_rb4"
+                style="@style/bangdan_tab_rb"
+                android:background="@drawable/radio_bg_right"
+                android:text="守护榜"/>
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tab_bg"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_bd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

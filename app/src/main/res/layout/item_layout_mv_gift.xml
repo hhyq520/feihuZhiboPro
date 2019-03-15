@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfo"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:layout_below="@+id/mv_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/mv_user_head"
+                android:src="@drawable/head_bg"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+
+            <TextView
+                android:layout_marginLeft="17dp"
+                android:id="@+id/mv_user_name"
+                android:layout_marginTop="@dimen/mv_video_item_m_top"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:text="主播名称"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="@color/mv_demand_text"
+                android:textSize="13sp"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"
+                android:id="@+id/mv_user_desc"
+                android:layout_below="@+id/mv_user_name"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:text="赠送"
+                android:maxLines="1"
+                android:textColor="@color/mv_demand_text"
+                android:ellipsize="end"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/mv_user_gift"
+                android:layout_below="@+id/mv_user_name"
+                android:layout_toRightOf="@+id/mv_user_desc"
+                android:text="1251"
+                android:maxLines="1"
+                android:textColor="@color/mv_video_text"
+                android:ellipsize="end"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:text="1255万"
+            android:drawablePadding="9dp"
+            android:textColor="@color/mv_text_color_select"
+            android:ellipsize="end"
+            android:textSize="11sp"
+            android:drawableRight="@drawable/icon_mv_coin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/mv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/rl_userInfo"
+         style="@style/mv_driver_h"/>
+
+</RelativeLayout>

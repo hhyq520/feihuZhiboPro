@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_white"
+              android:orientation="vertical">
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/zb_eui_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="我的需求"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/diver"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mv_video_layout"
+        android:paddingLeft="11dp">
+
+        <ImageView
+            android:id="@+id/mv_user_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/head_bg"/>
+
+
+        <TextView
+            android:id="@+id/mv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@+id/mv_user_head"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/mv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4dp"
+            android:background="#f4f4f1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/icon_mv_collect"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="22dp"
+            android:text="收藏的需求"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp"/>
+
+
+        <TextView
+            android:id="@+id/mv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_user_name"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/mv_user_head"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="测试--"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/app_white">
+
+        <RadioGroup
+            android:id="@+id/rg_bd"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tab_bd_shape"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bd_rb1"
+                style="@style/mv_demand_tab_rb"
+                android:background="@drawable/radio_bg_left"
+                android:text="我的需求"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/btn_sure_forbidden"/>
+
+
+            <RadioButton
+                android:id="@+id/bd_rb2"
+                style="@style/mv_demand_tab_rb"
+                android:background="@drawable/radio_bg"
+                android:text="待成交作品"
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/btn_sure_forbidden"/>
+
+            <RadioButton
+                android:id="@+id/bd_rb3"
+                style="@style/mv_demand_tab_rb"
+                android:background="@drawable/radio_bg_right"
+                android:checked="true"
+                android:text="已完成作品"
+                />
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tab_bg"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_bd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

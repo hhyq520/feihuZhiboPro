@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/tc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backText="返回"
+        app:moreText="确定"
+        app:titleText="设置封面"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/diver"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mv_editImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/void_driver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="滑动选择一张封面图"/>
+
+        <View
+            android:id="@+id/void_driver"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/ll_post_"
+            android:background="@color/diver"/>
+
+        <FrameLayout
+            android:id="@+id/ll_post_"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mv_choose_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cut_mv_img1"
+                    style="@style/mv_cut_image"
+                    />
+
+                <ImageView
+                    android:id="@+id/cut_mv_img2"
+                    style="@style/mv_cut_image"
+                    />
+
+                <ImageView
+                    android:id="@+id/cut_mv_img3"
+                    style="@style/mv_cut_image"
+                    />
+
+                <ImageView
+                    android:id="@+id/cut_mv_img4"
+                    style="@style/mv_cut_image"
+                    />
+
+                <ImageView
+                    android:id="@+id/cut_mv_img5"
+                    style="@style/mv_cut_image"
+                    />
+
+                <ImageView
+                    android:id="@+id/cut_mv_img6"
+                    style="@style/mv_cut_image"
+                    />
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/mv_cut_seekbBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progressDrawable="@drawable/mv_cutimg_seekbar"
+                android:thumb="@drawable/mv_cut_bg"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

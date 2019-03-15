@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="选择"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="公老虎多"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/l1"
+                android:id="@+id/img_zhuang"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_zhuang"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/l1"
+                android:id="@+id/img_win"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_win"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="比例"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/bili"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="1:1"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/frm_player"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="@string/hubi"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_hubi"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="+1000"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yin_coin_lin"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="@string/yin_coin"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/yin_coin"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="+1000"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/frm_zhuang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/end_hubi"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="已投"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_touzhu"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="1000"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_wei_tou"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="未投"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_not_touzhu"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:textColor="@color/messageTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/endlin"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/yin_coin"
+                android:textSize="14sp"
+                android:textColor="@color/messageTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/end_yin_coin"
+                android:layout_marginLeft="5dp"
+                android:text="1000"
+                android:textSize="14sp"
+                android:textColor="@color/messageTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/date_tv"
+                android:text="2017"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/messageTextColor"/>
+
+            <TextView
+                android:id="@+id/player_state"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:text="进行中"
+                android:textSize="14sp"
+                android:textColor="@color/messageTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_pro"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_gravity="center_vertical|right"-->
+                <!--android:text="进行中"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="@color/messageTextColor"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        </FrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

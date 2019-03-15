@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/pic_leyao_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/guess_history"
+                android:background="@drawable/yellow_bg"
+                android:textSize="13sp"
+                android:text="竞猜历史"
+                android:textColor="@color/app_white"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/award_history"
+                android:background="@drawable/yellow_bg"
+                android:textSize="13sp"
+                android:text="开奖记录"
+                android:textColor="@color/app_white"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/play"
+                android:background="@drawable/yellow_bg"
+                android:textSize="13sp"
+                android:text="我要互动"
+                android:textColor="@color/app_white"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_game_two"
+            android:id="@+id/img_jincai"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+    <LinearLayout
+        android:layout_marginLeft="9dp"
+        android:id="@+id/lin_time_left"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/game_process"
+            android:textColor="@color/text_gray"
+            android:background="@drawable/barrage_shape"
+            android:textSize="14sp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="游戏已进行1/6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/game_countdown"
+            android:background="@drawable/barrage_shape"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            android:text="游戏倒计时0:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/pic_card_ves"
+                android:orientation="horizontal"
+                android:layout_width="95dp"
+                android:layout_height="65dp">
+
+                <cn.feihutv.zhibofeihu.ui.widget.ZQImageViewRoundOval
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/head_img1"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_num1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/app_white"
+                    android:text="1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/num_bg"/>
+                <cn.feihutv.zhibofeihu.ui.widget.ZQImageViewRoundOval
+                    android:visibility="gone"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_num1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/head_img2"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/tv_num1"
+                    android:id="@+id/tv_num2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/app_white"
+                    android:text="10"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/num_bg"/>
+                <cn.feihutv.zhibofeihu.ui.widget.ZQImageViewRoundOval
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/tv_num2"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/head_img3"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_num2"
+                    android:id="@+id/tv_num3"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/app_white"
+                    android:text="10"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/num_bg"/>
+            </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/list_horizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"/>
+
+            <FrameLayout
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+
+                android:id="@+id/play_game"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lin_clock"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/tv_time_left"
+                    android:background="@drawable/pic_timing_sixty"
+                    android:textSize="16sp"
+                    android:text="60"
+                    android:gravity="center"
+                    android:textColor="@color/app_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:text="下一局游戏马上开始"
+                    android:gravity="center"
+                    android:textColor="@color/app_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/end_bg"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/game_background"/>
+
+            <ImageView
+                android:id="@+id/game_help"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/btn_game_help"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lin_begin"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/barrage_shape"
+                android:layout_gravity="bottom|left"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+                <TextView
+                    android:textColor="@color/text_gray"
+                    android:id="@+id/nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+                <Button
+                    android:id="@+id/go_room"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/yellow_bg"
+                    android:text="开启"
+                    android:textSize="12sp"
+                    android:textColor="@color/app_white"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@color/base_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <cn.feihutv.zhibofeihu.ui.widget.VerticalViewPager
+            android:id="@id/view_pager"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_width="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/dots"
+                android:id="@+id/img_dot_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dots"
+                android:id="@+id/img_dot_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dots"
+                android:id="@+id/img_dot_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

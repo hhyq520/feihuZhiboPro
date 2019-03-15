@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/btn_sure_forbidden"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/pop_more_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="幸运用户"
+        android:textColor="@color/textNormal"/>
+
+
+    <TextView
+        android:id="@+id/tv_2"
+        style="@style/pop_more_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="幸运主播"
+        android:textColor="@color/textNormal"/>
+
+    <TextView
+        android:id="@+id/tv_3"
+        style="@style/pop_more_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="飞虎流星"
+        android:textColor="@color/textNormal"/>
+
+</LinearLayout>

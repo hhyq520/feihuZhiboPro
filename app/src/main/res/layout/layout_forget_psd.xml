@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+
+        <FrameLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <RelativeLayout
+            android:id="@+id/login_phone_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/login_shape"
+            android:paddingBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/iv_login_zw"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-45dp"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_login_zw"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="找回密码"
+                android:textColor="@color/appColor"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/login_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_input_account"/>
+
+                <EditText
+                    android:id="@+id/forget_edit_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:hint="@string/inputPhoneNum"
+                    android:inputType="phone"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:textColor="@color/textNormal"
+                    android:textCursorDrawable="@null"
+                    android:theme="@style/MyEditText"
+                    android:textColorHint="@color/text_gray"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/forget_rl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/login_ll1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_verificationcode"/>
+
+
+                <EditText
+                    android:id="@+id/edit_verifity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/inputCode"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icon_code"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/textNormal"
+                    android:textCursorDrawable="@null"
+                    android:theme="@style/MyEditText"
+                    android:textColorHint="@color/text_gray"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:background="@color/text_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_getcode"/>
+
+                <TextView
+                    android:id="@+id/tv_getcode"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/getCode"
+                    android:textColor="@color/selector_btn_background_verification"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/forget_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/forget_rl"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_input_psd"/>
+
+
+                <EditText
+                    android:id="@+id/edit_newpsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:hint="@string/inputNewPsd"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textPassword"
+                    android:textColor="@color/textNormal"
+                    android:textCursorDrawable="@null"
+                    android:theme="@style/MyEditText"
+                    android:textColorHint="@color/text_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/forget_ll3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/forget_ll2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/psd_placeholder"/>
+
+                <EditText
+                    android:id="@+id/edit_surepsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:hint="@string/inputPsdAgain"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:textColor="@color/textNormal"
+                    android:textCursorDrawable="@null"
+                    android:theme="@style/MyEditText"
+                    android:textColorHint="@color/text_gray"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/forget_ll3"
+                android:layout_margin="30dp"
+                android:background="@drawable/selector_btn_background_theme_shallow"
+                android:enabled="false"
+                android:text="确定"
+                android:textColor="@color/app_white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_feihu"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

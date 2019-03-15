@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+   >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/talk_gift_view"
+        android:layout_marginTop="3dp"
+        android:id="@+id/im_msg_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+       />
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:layout_alignParentTop="true"
+        android:id="@+id/danmaku_view"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"/>
+
+    <LinearLayout
+        android:id="@+id/gift_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true"
+        android:gravity="top"
+        android:orientation="vertical" />
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.DanmuBase.DanmakuPChannel
+        android:id="@+id/dan_vip"
+        android:visibility="visible"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TalkGiftView
+        android:id="@+id/talk_gift_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/pic_ly"
+        android:layout_above="@+id/pic_jc"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/icon_game_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/talk_gift_view"
+        android:layout_alignParentRight="true"
+        android:id="@+id/pic_jc"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/icon_game_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

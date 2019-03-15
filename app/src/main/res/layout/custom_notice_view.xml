@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp">
+
+    <TextView
+        android:id="@+id/secret_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/secret_info"
+        android:textColor="@color/app_white" />
+
+    <TextView
+        android:id="@+id/bar_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/red_dot_bg"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="@color/app_white"
+        android:textSize="10sp"
+        android:visibility="gone" />
+</RelativeLayout>

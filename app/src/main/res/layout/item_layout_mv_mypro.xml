@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/shape_mv_my_bg2">
+
+
+    <RelativeLayout
+        android:paddingLeft="8dp"
+        android:paddingTop="12.5dp"
+        android:paddingBottom="12.5dp"
+        android:id="@+id/rl_userInfo"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mv_video_layout"
+        android:layout_width="match_parent" >
+
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/item_mv_image"
+            android:src="@drawable/bg"
+            android:layout_width="145dp"
+            android:layout_height="100dp"/>
+
+
+        <ImageView
+            android:layout_toRightOf="@+id/item_mv_image"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/mv_user_head"
+            android:src="@drawable/head_bg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+
+        <TextView
+           android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/mv_user_name"
+            android:layout_toRightOf="@+id/mv_user_head"
+            android:text="主播名称6666"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textColor="@color/dynamic_text_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/item_mv_image"
+            android:id="@+id/mv_title_song"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/mv_user_head"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:text="1651516161516115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/mv_title_desc"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/mv_title_song"
+            android:layout_toRightOf="@+id/item_mv_image"
+            android:maxLines="2"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    <TextView
+        android:background="@color/white"
+        style="@style/mv_driver_h"
+        />
+
+    <RelativeLayout
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/mv_time"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:text="1651516161516115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mv_comment"
+            android:layout_marginRight="26dp"
+            android:layout_toLeftOf="@+id/mv_down"
+            android:drawableLeft="@drawable/icon_mv_msg"
+            android:drawablePadding="3dp"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:maxLength="6"
+            android:minWidth="20dp"
+            android:textSize="14sp"
+            android:textColor="#5d5d5d"
+            android:text="20.02万"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:id="@+id/mv_down"
+            android:layout_toLeftOf="@+id/mv_gift"
+            android:background="@drawable/icon_down"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:id="@+id/mv_gift"
+            android:layout_marginRight="22dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

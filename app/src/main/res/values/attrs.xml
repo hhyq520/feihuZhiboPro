@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 条形控制控件自定义属性 -->
+    <declare-styleable name="TCLineView">
+        <!-- 名称 -->
+        <attr name="name" format="string" />
+        <!-- 内容或当前状态 -->
+        <attr name="content" format="string" />
+        <!-- 是否是列表中最后一个 -->
+        <attr name="isBottom" format="boolean" />
+        <!-- 是否可以跳转 -->
+        <attr name="canNav" format="boolean" />
+    </declare-styleable>
+
+
+
+    <!-- 标题模板自定义属性 -->
+    <declare-styleable name="TCActivityTitle">
+        <!-- 标题文案 -->
+        <attr name="titleText" format="string" />
+        <!-- 是否有back按钮 -->
+        <attr name="canBack" format="boolean" />
+        <!-- back按钮文案 -->
+        <attr name="backText" format="string" />
+        <!-- 右侧更多功能按钮文字 -->
+        <attr name="moreText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TCActivityGift">
+        <!-- 礼物图片 -->
+        <attr name="bgImage" format="integer"/>
+
+        <!-- 礼物数量 -->
+        <attr name="giftNum" format="string"/>
+
+        <!-- 礼物价格 -->
+        <attr name="giftPrice" format="string"/>
+
+        <!-- 经验值 -->
+        <attr name="exp" format="string"/>
+    </declare-styleable>
+
+    <!-- 充值自定义属性 -->
+    <declare-styleable name="TCActivityRecharge">
+        <!-- 充值金额 -->
+        <attr name="rechargeMoney" format="string" />
+        <!--充值虎币-->
+        <attr name="rechargeNum" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SwipeListView">
+        <attr name="swipeOpenOnLongPress" format="boolean" />
+        <attr name="swipeAnimationTime" format="integer" />
+        <attr name="swipeOffsetLeft" format="dimension" />
+        <attr name="swipeOffsetRight" format="dimension" />
+        <attr name="swipeCloseAllItemsWhenMoveList" format="boolean" />
+        <attr name="swipeFrontView" format="reference" />
+        <attr name="swipeBackView" format="reference" />
+        <attr name="swipeMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="both" value="1" />
+            <enum name="right" value="2" />
+            <enum name="left" value="3" />
+        </attr>
+        <attr name="swipeActionLeft" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+        </attr>
+        <attr name="swipeActionRight" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PraiseListView">
+        <attr name="item_color" format="color" />
+        <attr name="item_selector_color" format="color" />
+    </declare-styleable>
+
+
+    <!-- 进度百分比文字大小 -->
+    <attr name="percent_text_size" format="dimension" />
+    <!-- 圆形进度条边框大小 -->
+    <attr name="stroke_width" format="dimension" />
+    <!-- 矩形进度条 四周圆角大小 -->
+    <attr name="rect_round" format="dimension" />
+    <!-- 矩形进度条 是空心样式还是实心样式 -->
+    <attr name="isHorizonStroke" format="boolean" />
+    <!-- 进度百分比文字颜色 -->
+    <attr name="percent_text_color" format="color|integer" />
+    <!-- 进度条背景颜色 -->
+    <attr name="progressBarBgColor" format="color|integer" />
+    <!-- 扇形进度条颜色 -->
+    <attr name="sectorColor" format="color|integer" />
+    <!-- 扇形背景颜色 -->
+    <attr name="unSweepColor" format="color|integer" />
+    <!-- 进度颜色 -->
+    <attr name="progressColor" format="color|integer" />
+    <!-- 进度文字是否显示百分号 -->
+    <attr name="showPercentSign" format="boolean"/>
+    <!-- 进度条样式圆形还是矩形 -->
+    <attr name="orientation">
+        <enum name="horizontal" value="0"/>
+        <enum name="circle" value="1"/>
+        <enum name="sector" value="2"/>
+    </attr>
+
+    <declare-styleable name="cbprogressbar">
+        <attr name="percent_text_size"/>
+        <attr name="isHorizonStroke"/>
+        <attr name="percent_text_color"/>
+        <attr name="progressBarBgColor"/>
+        <attr name="progressColor"/>
+        <attr name="sectorColor"/>
+        <attr name="unSweepColor"/>
+        <attr name="orientation"/>
+        <attr name="stroke_width"/>
+        <attr name="rect_round"/>
+        <attr name="showPercentSign"/>
+    </declare-styleable>
+
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float"/>
+        <attr name="unselectedSaturation" format="float"/>
+        <attr name="unselectedScale" format="float"/>
+        <attr name="maxRotation" format="integer"/>
+        <attr name="scaleDownGravity" format="float"/>
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="FHAutoImageView">
+        <attr name="ImageSrc" format="reference"/>
+    </declare-styleable>
+
+
+    <!-- 多边形图片-->
+    <declare-styleable name="PolygonImageView" >
+        <attr name="poly_vertices" format="integer" />
+        <attr name="poly_rotation_angle" format="float" />
+        <attr name="poly_corner_radius" format="float" />
+        <attr name="poly_border" format="boolean" />
+        <attr name="poly_border_color" format="color" />
+        <attr name="poly_border_width" format="dimension" />
+        <attr name="poly_shadow" format="boolean" />
+        <attr name="poly_shadow_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PolygonImageViewTheme" >
+        <attr name="polygonImageViewStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

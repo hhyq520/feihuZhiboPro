@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="9dp"
+        android:background="@drawable/shape_round_white">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_mid_top_bg"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="需求修改"
+            android:textColor="@color/dynamic_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="21dp"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="提示内容"
+            android:textColor="@color/dynamic_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_songName"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="确定修改需求？(修改将收取20%服务费)"
+            android:textColor="@color/dynamic_text"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="80.5dp"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_mid_bg"
+            android:gravity="left"
+            android:hint="想到新的需求吗，修改需求告诉主播吧"
+            android:maxLength="100"
+            android:paddingLeft="10dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/dynamic_text"
+            android:textSize="13sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="17.5dp"
+            android:background="@drawable/selector_btn_background_forbidden"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@color/app_white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sure"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="取消"
+            android:textColor="@color/textNormal"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

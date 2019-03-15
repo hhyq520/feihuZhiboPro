@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color">
+
+    <GridView
+        android:id="@+id/mount_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="20dp"
+        android:numColumns="3"
+        android:paddingBottom="20dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="20dp"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_null_dz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="116dp"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_no_attention"/>
+
+        <TextView
+            android:id="@+id/tv_no_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="您的包裹空空如也~"
+            android:textColor="@color/dynamic_text"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

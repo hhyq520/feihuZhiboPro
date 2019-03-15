@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/linerlayout_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp">
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_alignTop="@+id/sendcontext"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp" />
+
+        <ImageView
+            android:layout_toRightOf="@+id/iv"
+            android:id="@+id/img_vip"
+            android:src="@drawable/icon_vip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignTop="@+id/sendcontext"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp" />
+
+        <ImageView
+            android:layout_toRightOf="@+id/img_vip"
+            android:id="@+id/img_guard"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:src="@drawable/icon_guard"
+            android:layout_alignTop="@+id/sendcontext"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp" />
+
+        <FrameLayout
+            android:layout_toRightOf="@+id/img_guard"
+            android:id="@+id/text_frm"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textColor="@color/app_white"
+                android:id="@+id/text_liang"
+                android:textSize="15sp"
+                android:shadowColor="#cc000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+        <TextView
+            android:textColor="@color/app_white"
+            android:id="@+id/text_normal"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:shadowColor="#cc000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="18dp" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/sendcontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="top"
+            android:layout_toRightOf="@+id/text_frm"
+            android:layout_marginLeft="4dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:textSize="14sp"
+            android:shadowColor="#cc000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text="000000000000000000000000000000000000"/>
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

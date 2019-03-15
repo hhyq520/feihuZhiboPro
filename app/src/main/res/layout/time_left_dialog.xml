@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/white_cc_shape"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <cn.feihutv.zhibofeihu.ui.widget.CBProgressBar
+        android:id="@+id/my_progress"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/oval_bg"
+        android:layout_gravity="center_horizontal"
+        cb:orientation="circle"
+        cb:percent_text_color="@color/text_gray"
+        cb:percent_text_size="18sp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/app_white"
+        android:text="抢夺权限"
+        android:textSize="16sp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_kaiqiang_bg"/>
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/app_white"
+        android:text="进入游戏"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/yellow_bg"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="系统开局期间可以竞抢权限，竞抢权限成功下局开启"
+        android:textSize="10sp"
+        android:textColor="@color/textNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/bangdan_bg"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip"
+        android:tag="front">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/face"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="58.0dip"
+            android:layout_toRightOf="@id/icon"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:padding="0.0dip"
+            android:text=""
+            android:textColor="@color/messageTextColor"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:textColor="@color/textNormal"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:shadowColor="#19000000"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="00:00"
+                android:textColor="@color/textNormal"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

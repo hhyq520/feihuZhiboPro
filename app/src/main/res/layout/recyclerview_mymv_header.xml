@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/rv_mymv_myzp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/mv_driver_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <RelativeLayout
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="43dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="我的作品"
+                android:textSize="14sp"
+                android:textColor="@color/dynamic_text_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:background="@drawable/selector_mv_btn_cancel_bg"
+                android:id="@+id/mv_posted"
+                android:text="发布"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/icon_mv_posted"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="@color/mv_text_color_select"
+                android:ellipsize="end"
+                android:layout_width="64.5dp"
+                android:layout_height="25dp"/>
+        </RelativeLayout>
+        <TextView style="@style/mv_driver_h"/>
+
+        <RelativeLayout
+            android:paddingLeft="1dp"
+            android:paddingRight="12dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="81dp">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/rl_my_zp_list"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    style="@style/mv_mymv_image_cardView"
+                    android:id="@+id/iv_mymv_CardView1"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:background="@color/red"
+                        android:id="@+id/iv_mymv_photo1"
+                        style="@style/mv_mymv_image"/>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/iv_mymv_CardView2"
+                    android:layout_marginLeft="10dp"
+                    style="@style/mv_mymv_image_cardView"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:id="@+id/iv_mymv_photo2"
+                        style="@style/mv_mymv_image"/>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/iv_mymv_CardView3"
+                    android:layout_marginLeft="10dp"
+                    style="@style/mv_mymv_image_cardView"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:id="@+id/iv_mymv_photo3"
+                        style="@style/mv_mymv_image"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <TextView
+
+                android:visibility="visible"
+                android:id="@+id/zp_awp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:visibility="gone"
+                android:id="@+id/ll_null_zp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_no_attention"
+                    android:layout_width="47dp"
+                    android:layout_height="49dp"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="暂未发布作品"
+                    android:textSize="11sp"
+                    android:textColor="@color/dynamic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/mv_driver_bg2"
+        android:layout_width="match_parent"
+        android:layout_height="11.5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的定制"
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/mv_dz"
+            android:layout_width="64.5dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_mv_btn_cancel_bg"
+            android:drawableLeft="@drawable/icon_mv_customizatio"
+            android:drawablePadding="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="定制"
+            android:textColor="@color/mv_text_color_select"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <TextView style="@style/mv_driver_h"/>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ll_head_empty_view"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/icon_no_attention"
+            android:layout_width="116dp"
+            android:layout_height="124dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="您还没有定制过哦~"
+            android:textSize="15sp"
+            android:textColor="@color/dynamic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

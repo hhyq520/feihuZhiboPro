@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.feihutv.zhibofeihu">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- 极光推送 -->
+    <!-- Required -->
+    <permission
+        android:name="cn.feihutv.zhibofeihu.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.feihutv.zhibofeihu.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".FeihuZhiboApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".activitys.SplashActiity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.feihutv.zhibofeihu" />
+            </intent-filter>
+        </activity>
+
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="cn.feihutv.zhibofeihu.DataProvider"
+            android:exported="true" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="cn.feihutv.zhibofeihu" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.feihutv.zhibofeihu" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="cn.feihutv.zhibofeihu" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="e6c945eef36adc3bf19fa61b" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <receiver
+            android:name=".service.PushJService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+
+                <category android:name="cn.feihutv.zhibofeihu" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.live.SWCameraStreamingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.live.renzheng.UploadFailureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.renzheng.RenzhengSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.renzheng.UploadSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.renzheng.IdentityInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 第三方登录分享 -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106077402" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58b919551061d22758001dd9" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".ui.user.phoneLogin.PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.forgetPsd.ForgetPsdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.UserAgreement"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.DemoService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.InitAppService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.me.recharge.RechargeActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.home.history.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.PLVideoViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.home.search.SearchUserActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.live.pclive.LivePlayInPCActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.me.dynamic.DynamicDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.dynamic.OthersCommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.widget.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.dynamic.SendDynamicActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".service.ConnectionChangeReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.me.personalInfo.SignatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.personalInfo.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.personalInfo.NicknameModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.live.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.personalInfo.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.concern.ConcernActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.personalInfo.BlindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.personalInfo.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.personalInfo.SurePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.concern.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.recharge.PrepaidrecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.encash.IncomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.encash.MyEarningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.encash.FirstBindZhiFuBao"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.encash.AccountBindingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.encash.WithdrawalrecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.encash.ChangeZFActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.roommrgs.RoomMrgsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.setting.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.setting.BlacklistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.LevelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.ContributionListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.guard.GuardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.shop.ShoppingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mv.demand.MyDemandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.baoguo.BegPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.HubaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.vip.MyVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.vip.ReceAndSendRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.vip.GiveFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mv.demand.PostMvVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.mv.demand.PostDemandActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.mv.demand.CutMvVideoImageActivity" />
+        <activity
+            android:name=".ui.mv.MvVideoDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.mv.demand.BuyMvDemandActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.me.setting.MsgReceSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.news.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.news.NoticeSnsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.news.RecentNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.news.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.me.news.NoticeSysActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mv.MyMvGiftActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mv.demand.MyMvCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.mv.MyMvProductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.ShowBigImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.HisGuardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.vip.QuickUpgradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.WebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.me.dowm.MyDownActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_above="@+id/tv_post_demand"
+        android:id="@+id/myList"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+
+
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_post_demand"
+        android:layout_width="198dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="18.5dp"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_background_forbidden"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="发布需求"
+        android:textColor="@color/app_white"
+        android:textSize="14sp"/>
+
+
+
+    <LinearLayout
+         android:visibility="gone"
+        android:id="@+id/ll_mv_demand_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/view_mv_demand_empty"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

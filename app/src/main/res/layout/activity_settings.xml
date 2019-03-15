@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bangdan_bg"
+              android:orientation="vertical">
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/identity_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="@string/settings"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bangdan_bg"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="悬浮播放"
+            android:textColor="@color/textNormal"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/switch_button"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/switch_button"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/lcv_recevice_news"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/recevice_news"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/lcv_blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/blacklist"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/lcv_faq"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/faq"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:onClick="onClick"
+        app:canNav="false"
+        app:isBottom="true"
+        app:name="@string/clear_the_cache"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/setting_version"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="false"
+        app:isBottom="true"
+        app:name="当前版本"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/setting_management"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="平台管理规范"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/lcv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/about_us"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCLineControllerView
+        android:id="@+id/lcv_give_us_score"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/give_us_score"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bangdan_bg"/>
+
+
+    <Button
+        android:id="@+id/btn_launch_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_btn_background_forbidden"
+        android:text="@string/to_launch_the_login"
+        android:textColor="@color/app_white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

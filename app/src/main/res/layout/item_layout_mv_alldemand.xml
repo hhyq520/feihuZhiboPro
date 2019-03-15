@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/shape_mv_my_bg">
+
+
+    <RelativeLayout
+        android:paddingRight="11dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/rl_userInfo"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mv_video_layout"
+        android:layout_width="match_parent" >
+
+
+
+        <ImageView
+            android:id="@+id/item_mv_del"
+            android:src="@drawable/icon_mv_del"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/item_mv_del"
+            android:id="@+id/mv_title"
+             android:text=" "
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/dynamic_text"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/mv_title_song"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/mv_title"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/mv_title_desc"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/mv_title_song"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:paddingRight="11dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mv_item_coin1"
+            android:text="冻结"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/mv_item_coin"
+            android:layout_toRightOf="@+id/mv_item_coin1"
+            android:drawableRight="@drawable/icon_mv_coin"
+            android:drawablePadding="3dp"
+            android:textSize="13sp"
+            android:textColor="@color/mv_item_coin"
+            android:text="20000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_item_time_layout"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/mv_item_time"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_mv_time2"
+                android:drawablePadding="3dp"
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="13sp"/>
+            <cn.iwgang.countdownview.CountdownView
+                android:layout_gravity="center"
+                android:id="@+id/cv_countdownView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@color/transparent"
+                app:isShowMillisecond="true"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:suffixGravity="center"
+                app:suffixTextColor="@color/dynamic_text_color2"
+                app:suffixTextSize="13sp"
+                app:timeTextColor="@color/dynamic_text_color2"
+                app:timeTextSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

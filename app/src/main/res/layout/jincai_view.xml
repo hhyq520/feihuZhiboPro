@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/tv_name_top"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="公多"
+            android:textSize="14sp"
+            android:textColor="@color/app_white"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_name_bottom"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="母多"
+            android:textSize="14sp"
+            android:textColor="@color/app_white"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/pic_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:weightSum="10"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <FrameLayout
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/peilv_top"
+                android:textSize="12sp"
+                android:textColor="@color/app_white"
+                android:text="1:4"
+                android:gravity="center"
+                android:background="@drawable/pic_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/progress_top"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/app_white"
+                    android:text="80"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <ProgressBar
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/up_progress"
+                android:layout_width="80dp"
+                android:layout_height="5dp"
+                android:max="100"
+                android:progress="40"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progressbar_color"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_up"
+                android:background="@drawable/yellow_bg"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="我要竞猜"
+                android:textColor="@color/app_white"
+                android:layout_width="80dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <FrameLayout
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/peilv_down"
+                android:textSize="10sp"
+                android:textColor="@color/app_white"
+                android:text="1:0.25"
+                android:gravity="center"
+                android:background="@drawable/pic_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/progress_down"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/app_white"
+                    android:text="80"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ProgressBar
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/down_progress"
+                    android:layout_width="80dp"
+                    android:layout_height="5dp"
+                    android:max="100"
+                    android:progress="40"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_color"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_down"
+
+                android:background="@drawable/yellow_bg"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="我要竞猜"
+                android:textColor="@color/app_white"
+                android:layout_width="80dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

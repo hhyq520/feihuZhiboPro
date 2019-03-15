@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:background="@color/app_white"
+    android:layout_height="49dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        
+
+   <TextView
+       android:id="@+id/rank_level"
+       android:textColor="@color/textNormal"
+       android:text="4"
+       android:gravity="center"
+       android:textSize="12sp"
+       android:layout_width="30dp"
+       android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/img_head"
+        android:src="@drawable/face"
+        android:layout_width="36dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/text_name"
+        android:textColor="@color/textNormal"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginLeft="4dp"
+        android:id="@+id/img_level"
+        android:layout_width="25dp"
+        android:layout_height="20dp" />
+    <ImageView
+        android:layout_marginLeft="2dp"
+        android:id="@+id/img_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageView
+        android:layout_marginLeft="2dp"
+        android:id="@+id/img_guard"
+        android:src="@drawable/icon_guard"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_hubi"
+            android:text="0"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/messageTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_gold_logo"/>
+    </LinearLayout>
+</FrameLayout>

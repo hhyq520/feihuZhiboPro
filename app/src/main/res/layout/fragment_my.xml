@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgpupelto"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_white"
+        android:orientation="vertical">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/pfl_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            app:ptr_duration_to_close="200"
+            app:ptr_duration_to_close_header="1000"
+            app:ptr_keep_header_when_refresh="false"
+            app:ptr_pull_to_fresh="false"
+            app:ptr_ratio_of_header_height_to_refresh="1"
+            app:ptr_resistance="1.1">
+
+            <cn.feihutv.zhibofeihu.ui.widget.scrolllayoutview.ScrollableLayout
+                android:id="@+id/sl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/community_head_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/sliding_tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="50.5dp"
+                            app:tabBackground="@drawable/tablayout_background"
+                            app:tabGravity="fill"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMode="fixed"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"/>
+
+                            <TextView
+                                android:id="@+id/my_tab_driver_left"
+                                android:layout_width="1dp"
+                                android:layout_height="21dp"
+                                android:layout_gravity="center"
+                                android:background="@color/tab_driver_v"
+                                android:visibility="gone"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"/>
+
+                            <TextView
+                                android:id="@+id/my_tab_driver_right"
+                                android:layout_width="1dp"
+                                android:layout_height="21dp"
+                                android:layout_gravity="center"
+                                android:background="@color/tab_driver_v"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"/>
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center"
+                        android:background="#eeeeee"/>
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+            </cn.feihutv.zhibofeihu.ui.widget.scrolllayoutview.ScrollableLayout>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_shape"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/btn_ss_male"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/userinfo_sex_male"
+        android:textColor="@color/textNormal"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/diver" />
+
+    <Button
+        android:id="@+id/btn_ss_female"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="@string/userinfo_sex_female"
+        android:textColor="@color/textNormal"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/diver" />
+
+    <Button
+        android:id="@+id/btn_ss_unkonw"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="@string/userinfo_sex_unknow"
+        android:textColor="@color/textNormal"
+        android:textSize="15sp" />
+</LinearLayout>

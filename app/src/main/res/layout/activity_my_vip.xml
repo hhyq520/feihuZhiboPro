@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:orientation="vertical"
+    tools:context="cn.feihutv.zhibofeihu.ui.me.vip.MyVipActivity">
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/vip_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:moreText="赠送"
+        app:titleText="VIP会员中心"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="202dp">
+
+                <View
+                    android:id="@+id/view_vip"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:background="@color/bangdan_bg"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/view_vip"
+                    android:background="@color/app_white">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginLeft="12dp"
+                        android:text="虎币余额: "
+                        android:textColor="@color/messageTextColor"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_hb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/icon_gold_logo"
+                        android:gravity="center_vertical"
+                        android:text="22"
+                        android:textColor="@color/messageTextColor"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="17dp"
+                        android:paddingRight="12dp"
+                        android:text="收赠记录"
+                        android:textColor="@color/messageTextColor"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/vipcard_color">
+
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/face"/>
+
+                    <TextView
+                        android:id="@+id/tv_nick_vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/iv_head"
+                        android:textColor="@color/app_white"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_level"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@+id/tv_nick_vip"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/tv_nick_vip"
+                        android:src="@drawable/icon_vip_1"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_vip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_nick_vip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/iv_head">
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/app_white"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_expire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tv_time"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/tv_time"
+                            android:text="(即将到期请尽快续费)"
+                            android:textColor="@color/btn_sure_forbidden"
+                            android:textSize="10sp"
+                            android:visibility="gone"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_time"
+                            android:layout_marginTop="18dp">
+
+                            <ImageView
+                                android:id="@+id/iv_level_now"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/icon_vip_1"/>
+
+                            <RelativeLayout
+                                android:id="@+id/rl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_toRightOf="@+id/iv_level_now">
+
+
+                                <com.liulishuo.magicprogresswidget.MagicProgressBar
+                                    android:id="@+id/vip_mpb"
+                                    android:layout_width="102dp"
+                                    android:layout_height="4dp"
+                                    app:mpb_fill_color="@color/btn_sure_forbidden"
+                                    app:mpb_background_color="@color/app_white"
+                                    app:mpb_flat="true"/>
+
+
+                                <TextView
+                                    android:id="@+id/tv_vip_lessexprience"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/vip_mpb"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="4dp"
+                                    android:text="还差3000成长值升级"
+                                    android:textColor="@color/app_white"
+                                    android:textSize="10sp"/>
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_level_next"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/rl"
+                                android:src="@drawable/icon_vip_1"/>
+
+                            <Button
+                                android:id="@+id/btn_quick"
+                                android:layout_width="75dp"
+                                android:layout_height="34dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/btn_upgrade"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_not_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginRight="50dp"
+                        android:text="您还尚未开通VIP"
+                        android:textColor="@color/app_white"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bangdan_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="会员充值套餐"
+                android:textColor="@color/messageTextColor"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bangdan_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/vip_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bangdan_bg"/>
+
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_btn_background_forbidden"
+                android:text="开通会员"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/text_16_sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bangdan_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:text="VIP特权"
+                android:textColor="@color/messageTextColor"
+                android:textSize="14sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/vip_rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

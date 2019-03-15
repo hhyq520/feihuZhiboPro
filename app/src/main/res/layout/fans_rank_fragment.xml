@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/frm_bg"
+    android:background="@drawable/bg_fensi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout
+        android:id="@+id/fans_swip"
+        android:background="#8BE8E0"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fans_rv"
+            android:background="@color/app_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/empty_view"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_no_attention"/>
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_marginTop="10dp"
+            android:text="暂未收到礼物哦~"
+            android:textSize="13sp"
+            android:textColor="@color/messageTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

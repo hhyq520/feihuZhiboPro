@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.feihutv.zhibofeihu.utils.weiget.view.wraprecyclerview.WrapRecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/text_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/icon_no_attention"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无中奖哦,多送送礼哦！"
+        android:textColor="@color/messageTextColor"
+        android:textSize="13sp"
+         />
+    </LinearLayout>
+</RelativeLayout>

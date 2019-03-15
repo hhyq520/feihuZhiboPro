@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@color/app_white">
+
+    <FrameLayout
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:background="@color/bg_color"
+        android:tag="back">
+
+        <Button
+            android:id="@+id/recent_del_btn"
+            android:layout_width="87dip"
+            android:layout_height="70dp"
+            android:layout_gravity="right|center"
+            android:text="删除"
+            android:background="#df0024"
+            android:textColor="#ffffffff"
+            android:textSize="15.0dip" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_gravity="center"
+        android:background="@color/bg_color"
+        android:tag="front">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="53.0dip"
+            android:layout_height="53.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:src="@drawable/face" />
+
+
+        <View
+            android:id="@+id/view_dot"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignRight="@+id/icon"
+            android:layout_alignTop="@+id/icon"
+            android:background="@drawable/notice_dot_shape" />
+
+        <TextView
+            android:id="@+id/recent_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_alignTop="@+id/icon"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/icon"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="way"
+            android:textColor="@color/my_tab_text_n"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:id="@+id/lin_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recent_list_item_name"
+            android:layout_marginLeft="70.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="2.0dip"
+            android:duplicateParentState="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_msg_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/nim_g_ic_failed_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/recent_list_item_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="25.0dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="new message"
+                android:textColor="@color/text_gray"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recent_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_above="@id/lin_mes"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="12dip"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:padding="0.0dip"
+            android:text="昨天"
+            android:textColor="@color/noticetextcolor"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/unreadmsg"
+            android:layout_width="20dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/recent_list_item_name"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/unread_bg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#19000000"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="10"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pc_bg_giftlayout">
+
+            <ImageView
+                android:id="@+id/crvheadimage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                android:src="@drawable/face" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/crvheadimage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gift_user_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小k"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/gift_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:text="爱心"
+                    android:textColor="@color/btn_sure_forbidden"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivgift"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/linearLayout" />
+
+            <cn.feihutv.zhibofeihu.ui.widget.MagicTextView
+                android:id="@+id/giftNum"
+                android:layout_toRightOf="@+id/ivgift"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/btn_sure_forbidden"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:strokeColor="#f26324"
+                app:strokeJoinStyle="bevel"
+                app:strokeWidth="3"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

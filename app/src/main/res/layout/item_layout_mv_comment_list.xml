@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="2.5dp">
+
+    <ImageView
+        android:id="@+id/mv_user_head"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/head_bg"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mv_video_layout"
+        android:layout_marginLeft="8dp">
+
+
+        <TextView
+            android:id="@+id/mv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text="主播名称6666"
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="12sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/like_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/mv_like_n"/>
+
+            <TextView
+                android:id="@+id/like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=""
+                android:textColor="@color/textNormal"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_user_name"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="2017-11-23 17:32:44"
+            android:textColor="@color/mv_demand_text"
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/mv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_time"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="9dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/textNormal"
+            android:textSize="13sp"/>
+
+        <TextView
+            style="@style/driver_h"
+            android:layout_below="@+id/mv_comment"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

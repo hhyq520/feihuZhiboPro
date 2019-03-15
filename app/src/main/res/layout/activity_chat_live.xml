@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:FlashView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_publish_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_controllLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+
+        <cn.feihutv.zhibofeihu.ui.widget.flashview.FlashView
+            android:id="@+id/flashview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            FlashView:loopTimes="0" />
+
+        <include
+            android:id="@+id/layout_live_pusher_info"
+            layout="@layout/layout_startlive_pusher_info"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="7dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_user_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/layout_live_pusher_info"
+            android:layout_toLeftOf="@+id/member_frm"
+            />
+
+        <FrameLayout
+            android:background="@drawable/member_count_background"
+            android:id="@+id/member_frm"
+            android:layout_marginTop="7dp"
+            android:padding="5dp"
+            android:minWidth="50dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_member"
+                android:textSize="12sp"
+                android:text=""
+                android:textColor="@color/app_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <!--弹幕-->
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/danmakuView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/count_view"
+            android:layout_marginTop="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/count_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_live_pusher_info">
+
+            <LinearLayout
+                android:id="@+id/ll_hubi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/icon_arrow_left_shape"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+              <ImageView
+                  android:src="@drawable/icon_tiger_coin"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="1dp"/>
+
+                <TextView
+                    android:id="@+id/tv_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="15dp"
+                    android:layout_marginRight="3dp"
+                    android:drawableRight="@drawable/icon_arrow"
+                    android:gravity="center"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textColor="@color/app_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/icon_arrow_right_shape"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/t3"
+                    android:textColor="@color/app_white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_accountId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="23519905"
+                    android:textColor="@color/app_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/count_view"
+            android:id="@+id/pic_ly"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="11dp"
+            android:src="@drawable/icon_game_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pic_ly"
+            android:layout_alignParentRight="true"
+            android:id="@+id/pic_jc"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/icon_game_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/caichi_time_left"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/count_view"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/pic_luckygift_time"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t1" />
+
+                <ImageView
+                    android:id="@+id/img_t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/tm" />
+
+                <ImageView
+                    android:id="@+id/img_t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t2" />
+
+                <ImageView
+                    android:id="@+id/img_t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_caichi_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离幸运爱心开奖"
+                android:textColor="@color/btn_sure_forbidden"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <cn.feihutv.zhibofeihu.ui.widget.TalkGiftView
+            android:id="@+id/talk_gift_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+               />
+
+            <Button
+                android:id="@+id/btn_message_input"
+                android:layout_width="@dimen/live_btn_size"
+                android:layout_height="@dimen/live_btn_size"
+                android:background="@drawable/message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btn_derect_msg"
+                    android:layout_width="@dimen/live_btn_size"
+                    android:layout_height="@dimen/live_btn_size"
+                    android:background="@drawable/icon_msg" />
+
+                <ImageView
+                    android:id="@+id/msg_new"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/red_dot"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_audio_ctrl"
+                android:layout_width="@dimen/live_btn_size"
+                android:layout_height="@dimen/live_btn_size"
+                android:background="@drawable/music_big" />
+
+            <TextView
+                android:id="@+id/view_margin_audio_ctrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="@dimen/live_btn_size"
+                android:layout_height="@dimen/live_btn_size"
+                android:background="@drawable/icon_share_y" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_more"
+                android:layout_width="@dimen/live_btn_size"
+                android:layout_height="@dimen/live_btn_size"
+                android:background="@drawable/icon_more" />
+
+            <TextView
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <!--选择互动形式-->
+        <LinearLayout
+            android:id="@+id/game_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/hd_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="选择互动形式"
+                    android:textColor="@color/textNormal"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/icon_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_help_hd" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_lucky"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_lucky_channel"
+                        android:text="幸运彩池"
+                        android:textColor="@color/textNormal"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_zhouxin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_week"
+                        android:text="周星栏"
+                        android:textColor="@color/textNormal"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_guess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_quiz_channel"
+                        android:text="游戏竞猜"
+                        android:textColor="@color/textNormal"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_shake"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_shake_channel"
+                        android:text="乐摇主播"
+                        android:textColor="@color/textNormal"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <!--幸运彩池-->
+        <LinearLayout
+            android:id="@+id/caichi_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/hd_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="幸运彩池"
+                    android:textColor="@color/appColor"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/icon_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_lottery_record" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_cucmb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pci_cucmb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="累计奖金"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/text_cucmb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_banana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pic_lucky_banna" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="累计奖金"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/text_banana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_love"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pic_luckylov" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="累计奖金"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/text_love"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_meteor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pic_meteor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="累计个数"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/text_meteor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                            android:textColor="@color/app_white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/pupel"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="玩法说明："
+                        android:textColor="@color/text_gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.用户赠送幸运礼物(小黄瓜、香蕉棒和爱心),有机会获得幸运大奖(幸运黄瓜、幸运香蕉、幸运爱心)"
+                        android:textColor="@color/text_gray"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.开奖时间：每天1、10、16、21点"
+                        android:textColor="@color/text_gray"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.飞虎流星：当用户赠送的飞虎流星数达到1万个时,该奖池会爆出50000虎币,赠送给其中一个赠送者"
+                        android:textColor="@color/text_gray"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/audio_plugin"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_audio_effect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/shape_round_button"
+                android:onClick="onClick"
+                android:text="音效"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_audio_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/shape_round_button"
+                android:onClick="onClick"
+                android:text="结束"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/im_msg_listview"
+            android:layout_width="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_height="180dp"
+            android:layout_above="@id/tool_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#3c421b1b"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal" />
+        <!--开奖-->
+        <LinearLayout
+            android:id="@+id/kaijiang_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/hd_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="选择开奖形式"
+                    android:textColor="@color/my_tab_text_n"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/pic_nmb_cotdn"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/app_white"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_grass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_game_grass"
+                        android:text="草丛有虎"
+                        android:textColor="@color/my_tab_text_n"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_jihu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_game_jar"
+                        android:text="丰达吉虎"
+                        android:textColor="@color/my_tab_text_n"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_baoguo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_game_guide"
+                        android:text="虎虎锦囊"
+                        android:textColor="@color/my_tab_text_n"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="8dp"
+                    android:text="说明:选择开奖方式不影响开奖结果"
+                    android:textColor="@color/my_tab_text_n"
+                    android:textSize="11sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/giftcontent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_above="@+id/im_msg_listview"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+        <cn.feihutv.zhibofeihu.ui.widget.DanmuBase.DanmakuChannel
+            android:id="@+id/dan_vip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+           />
+
+
+        <ImageView
+            android:id="@+id/zuojia_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <cn.feihutv.zhibofeihu.ui.widget.bsrgift.BSRGiftLayout
+            android:id="@+id/gift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            layout="@layout/audio_mixer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

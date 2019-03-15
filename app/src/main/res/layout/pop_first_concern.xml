@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_shape25"
+        android:layout_centerInParent="true"
+        android:layout_margin="37dp"
+       >
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="关注成功！"
+            android:lineSpacingExtra="10dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/btn_sure_forbidden"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_below="@+id/tv_pop"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="打开消息通知即可第一时间"
+            android:lineSpacingExtra="10dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/textNormal"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_kf"
+            android:layout_below="@+id/tv_time"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="收到主播动态哦!"
+            android:lineSpacingExtra="10dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/textNormal"
+            android:textSize="13sp"/>
+
+        <Button
+            android:layout_below="@+id/tv_kf"
+            android:id="@+id/tv_ok"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="@string/ok"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="51dp"
+            android:textColor="@color/app_white"
+            android:background="@drawable/yellow_bg"
+            android:layout_marginBottom="8dp"
+           />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:gravity="center"
+            android:layout_below="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="取消"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

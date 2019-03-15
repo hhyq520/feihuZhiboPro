@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/text_coin"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_12_sp"
+        android:textColor="@color/dynamic_text"
+        android:button="@null"
+        android:text="10万虎币"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:background="@drawable/radio_mv_coin_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"/>
+
+</LinearLayout>

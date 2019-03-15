@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_white"
+              android:orientation="vertical">
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/phone_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="@string/binding_mobile_phone_number"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/diver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/purple_gray_shape"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/inputPhoneNum"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textColor="@color/noticetextcolor"
+            android:textColorHint="@color/text_gray"/>
+
+
+        <TextView
+            android:id="@+id/tv_phonecode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_send_shape"
+            android:gravity="center"
+            android:text="@string/getCode"
+            android:textColor="@color/app_white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/verifity_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/purple_gray_shape"
+        android:hint="@string/inputCode"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/noticetextcolor"
+        android:textColorHint="@color/text_gray"/>
+
+    <EditText
+        android:id="@+id/first_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/purple_gray_shape"
+        android:hint="密码由6-15位的字母和数字组成"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/noticetextcolor"
+        android:textColorHint="@color/text_gray"/>
+
+    <EditText
+        android:id="@+id/next_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/purple_gray_shape"
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/noticetextcolor"
+        android:textColorHint="@color/text_gray"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login_ll2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_btn_background_forbidden"
+        android:text="@string/text6"
+        android:textColor="@color/app_white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="@string/blindphone_explain"
+        android:textColor="@color/red_pressed"/>
+</LinearLayout>

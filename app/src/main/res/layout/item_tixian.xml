@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/app_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-20"
+            android:textSize="16sp"
+            android:textColor="@color/textNormal"/>
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_month"
+            android:textColor="@color/textNormal"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icon_alipay" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0"
+            android:textSize="23sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/btn_sure_forbidden"/>
+
+        <TextView
+            android:id="@+id/tv_hubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0金虎币"
+            android:textSize="15sp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/textNormal"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text30"
+        android:layout_gravity="center"
+        android:layout_marginRight="18dp"
+        android:textColor="@color/red_pressed"
+        android:visibility="visible"
+        android:textSize="16sp"
+        android:gravity="right"/>
+
+</LinearLayout>

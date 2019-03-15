@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/pop_left"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="11dp"
+            android:id="@+id/pop_hudong_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_unselected" />
+
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:id="@+id/pop_gobeauty_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_beautiful" />
+
+
+    <ImageView
+        android:layout_marginTop="22dp"
+        android:id="@+id/pop_chagecam_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_camera" />
+
+    <ImageView
+        android:layout_marginTop="21dp"
+        android:id="@+id/pop_flash_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_flash" />
+
+    <ImageView
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="8dp"
+            android:id="@+id/pop_manger_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/manger_unselect" />
+</LinearLayout>

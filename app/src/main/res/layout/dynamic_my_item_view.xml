@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="#f7f7f7"
+              android:paddingLeft="12dp"
+              android:paddingRight="35dp"
+              android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dy_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="@color/dynamic_text"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="8 月"
+                android:textColor="@color/dynamic_text"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:maxWidth="60dp"
+            android:gravity="bottom"
+            android:maxLines="2"
+            android:text="北京 . 故宫颐和园园园园园园"
+            android:textColor="@color/dynamic_text"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- mv 图文动态 -->
+        <LinearLayout
+            android:id="@+id/ll_mv_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dy_mv_aPhoto"
+                    android:layout_width="78.5dp"
+                    android:layout_height="78.5dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/splash_bg"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon_mv_uncheck"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/dy_mv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="双十一，从“光棍节”变成了“剁手节”"
+                android:textColor="@color/dynamic_text"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+        <!-- mv 订单-->
+        <RelativeLayout
+            android:id="@+id/rl_dy_mv_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@color/dynamic_bg1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_mv_order_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="双十一，从“光棍节”变成了“剁手节”"
+                android:textColor="@color/dynamic_text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_mv_order_mName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mv_order_title"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="简单爱-马云"
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_mv_order_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="要求：是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是"
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+
+        <!-- 普通图文动态 -->
+        <RelativeLayout
+            android:id="@+id/rl_dy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <FrameLayout
+                android:id="@+id/fl_dy_photo_view"
+                android:layout_width="78.5dp"
+                android:layout_height="78.5dp"
+                android:layout_marginRight="10dp">
+
+                <cn.feihutv.zhibofeihu.ui.widget.MergePictureView
+                    android:id="@+id/mp_dy_mp_view"
+                    android:layout_width="78.5dp"
+                    android:layout_height="78.5dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_dy_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fl_dy_photo_view"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/dynamic_text"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_dy_photo_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/fl_dy_photo_view"
+                android:text="共2张"
+                android:textColor="@color/my_tab_text_n"
+                android:textSize="9sp"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

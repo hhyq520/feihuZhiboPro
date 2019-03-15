@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:orientation="vertical"
+              tools:context=".ui.home.search.SearchUserActivity">
+
+    <!--头部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/login_ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_ll1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:background="@drawable/shape_edit_search"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_seek"/>
+
+            <EditText
+                android:id="@+id/find_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/find_hint_txt"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_gray"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/btn_sure_forbidden"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!--搜索历史-->
+    <ScrollView
+        android:id="@+id/scr_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <cn.feihutv.zhibofeihu.ui.widget.Search_Listview
+                android:id="@+id/search_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/diver"
+                android:dividerHeight="0.5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_gray"/>
+
+            <TextView
+                android:id="@+id/clear_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/clear_history"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--推荐主播-->
+    <LinearLayout
+        android:id="@+id/recommend_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no_result_view"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/bg_color"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="@string/no_search"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/app_white"
+            android:layout_marginTop="0.5dp"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:text="@string/recommend_txt"
+            android:textColor="@color/textNormal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_white"/>
+    </LinearLayout>
+
+
+    <!--搜索结果-->
+    <LinearLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/bg_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="搜索结果"
+            android:textColor="@color/textNormal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/master_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!--状态页面-->
+    <cn.feihutv.zhibofeihu.ui.widget.StatusView
+        android:id="@+id/view_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

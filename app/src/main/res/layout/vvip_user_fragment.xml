@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout
+        android:id="@+id/vip_swip"
+        android:layout_above="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/vip_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/empty_view"
+      android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_no_attention"/>
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_marginTop="10dp"
+            android:text="快去成为我的第一位贵宾吧~"
+            android:textSize="13sp"
+            android:textColor="@color/messageTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_vip"
+            android:text="开通VIP"
+            android:textColor="@color/app_white"
+            android:textSize="13sp"
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:background="@drawable/yellow_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_vip"
+        android:textSize="13sp"
+        android:text="开通飞虎VIP,成为全平台的贵宾！"
+        android:textColor="@color/text_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_vip2"
+        android:text="开通VIP"
+        android:textSize="13sp"
+        android:textColor="@color/btn_sure_forbidden"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/yello_border_5bg"/>
+    </LinearLayout>
+</RelativeLayout>

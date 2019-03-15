@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_yk_login"
+        android:layout_centerInParent="true"
+        android:layout_margin="60dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_pop"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/img_succeed"
+            android:text="守护成功"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textColor="@color/messageTextColor"
+            android:layout_marginTop="18dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快去直播间炫耀一下吧！"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:layout_below="@+id/tv_pop"
+            android:layout_marginTop="7dp"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_pop_renzheng"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_btn_background_forbidden"
+            android:textColor="@color/app_white"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:text="知道啦"
+            android:textSize="12sp"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:text="3-6"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:id="@+id/tv_mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_gift"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_toRightOf="@+id/img_gift"
+            android:text="*5"
+            android:layout_marginLeft="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:id="@+id/tv_gift_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_gold"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_gold_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/img_gold"
+            android:layout_marginLeft="3dp"
+            android:text="1000"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_gray"
+            android:id="@+id/tv_hubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="333dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/icon_update_bg">
+
+        <cn.feihutv.zhibofeihu.ui.widget.RotateTextView
+            android:id="@+id/tv_versionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0.6"
+            android:layout_marginTop="75dp"
+            android:textColor="@color/app_white"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/icon_bg_versions"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="35dp"
+            android:padding="5dp"
+            android:layout_marginRight="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_desc"
+                android:textSize="12sp"
+                android:textColor="@color/text_gray"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tv_update"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_shape"
+            android:text="立即升级"
+            android:textSize="20sp"
+            android:textColor="@color/app_white"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_update_close"/>
+
+</LinearLayout>

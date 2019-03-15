@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:gravity="center_vertical"
+    android:background="@color/app_white">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_marginLeft="11dp"
+        android:src="@drawable/face"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/nick_name"
+        android:textColor="@color/my_tab_text_n"
+        android:textSize="13sp"
+        android:text="名字"
+        android:layout_marginLeft="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/img_level"
+        android:layout_marginLeft="4dp"
+        android:layout_width="25dp"
+        android:layout_height="20dp" />
+    <ImageView
+        android:id="@+id/img_vip"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageView
+        android:id="@+id/img_guard"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/icon_guard"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageView
+        android:id="@+id/img_liang"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/icon_beauti_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageView
+        android:id="@+id/img_kangkong"
+        android:layout_marginLeft="2dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_control"
+        android:layout_height="20dp" />
+</LinearLayout>

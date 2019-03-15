@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_white_shape">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="46dp"
+            android:lineSpacingExtra="10dp"
+            android:text="当前正在直播，是否退出直播？"
+            android:textColor="@color/textNormal"
+            android:textSize="15sp" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="33dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tip"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/tv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/yello_border_50bg"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/app_white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/btn_sure_forbidden"
+                android:textSize="18sp" />
+
+
+
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

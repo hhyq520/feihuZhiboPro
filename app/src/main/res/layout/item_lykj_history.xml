@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_gravity="center"
+         android:textSize="12sp"
+        android:textColor="@color/textNormal"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/textNormal"
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/textNormal"
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/orrange_bg"
+            android:id="@+id/text_sum"
+            android:textSize="13sp"
+            android:textColor="@color/app_white"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:text="6"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_new"
+        android:src="@drawable/icon_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

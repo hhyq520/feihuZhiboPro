@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/bg"
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:gravity="center"
+             android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="210dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/pic_yxjc_success">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜你！"
+                android:textColor="@color/red"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="成功开通月卡VIP套餐，\n赶紧去向小伙伴们炫耀下吧"
+                android:textColor="@color/text_gray"
+                android:textSize="10sp"/>
+
+            <Button
+                android:id="@+id/btn_know"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/yellow_bg"
+                android:text="知道了"
+                android:textColor="@color/app_white"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

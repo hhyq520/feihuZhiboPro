@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="三只一样"
+            android:textColor="@color/red_pressed"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_banker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img_state"
+                android:src="@drawable/icon_zhuang" />
+
+            <ImageView
+                android:id="@+id/img_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_win" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+       >
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/hubi_lin"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+         >
+
+            <ImageView
+                android:id="@+id/img_gold"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_gold_logo"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/text_hubi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="9dp"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/img_gold"
+                android:text="1999"
+                android:textColor="@color/messageTextColor"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/yhubi_lin"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+           >
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+            <ImageView
+                android:layout_toRightOf="@+id/text_yhb"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/img_yin"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_silver"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginRight="9dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/text_yhb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="9999"
+                android:textColor="@color/messageTextColor"
+                android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

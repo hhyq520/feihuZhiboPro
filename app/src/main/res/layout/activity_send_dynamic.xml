@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             style="@style/baseLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/app_white">
+
+            <TextView
+                android:id="@+id/menu_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/icon_left_return"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:textColor="@color/app_white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/textNormal"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/menu_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="发布"
+                android:textColor="@color/text2"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View style="@style/driver_h"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/say_something"
+            android:maxLength="130"
+            android:textColorHint="@color/text_gray"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dy_rv"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scrollbars="none"/>
+
+        <View
+            style="@style/driver_h_bg_10dp"
+            android:layout_marginTop="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_address"/>
+
+            <ProgressBar
+                android:id="@+id/wait_proBar"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_location"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_location"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:hint="所在位置"
+                android:textColorHint="@color/text_gray"/>
+
+            <ImageView
+                android:id="@+id/switch_button"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/switch_button"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

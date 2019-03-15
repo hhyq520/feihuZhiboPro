@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white">
+
+
+    <FrameLayout
+        android:id="@+id/mv_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@color/black">
+
+        <cn.feihutv.zhibofeihu.ui.widget.video.FhJZVideoPlayerStandard
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/mv_play_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="3dp"
+            android:text="播放次数：20.02万"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/mv_play_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/ic_subtitle"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <!--           <cn.feihutv.zhibofeihu.ui.widget.CNCVideoViewEx
+                        android:id="@+id/video_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    <cn.feihutv.zhibofeihu.ui.widget.video.VideoPlayerStandard
+                        android:id="@+id/video_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"/>-->
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="56.5dp"
+        android:layout_below="@+id/mv_video_layout"
+        android:paddingBottom="1dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mv_user_head"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:src="@drawable/head_bg"/>
+
+
+            <ImageView
+                android:id="@+id/mv_user_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:src="@drawable/icon_liveing"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/mv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="@dimen/mv_video_item_m_top"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:ellipsize="end"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:text="主播名称"
+                android:textColor="@color/dynamic_text"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/mv_user_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mv_user_name"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/mv_user_head"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/dynamic_text_color2"
+                android:textSize="11sp"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/mv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:layout_toLeftOf="@+id/mv_down"
+            android:drawableLeft="@drawable/icon_mv_msg"
+            android:drawablePadding="3dp"
+            android:maxLength="6"
+            android:minWidth="20dp"
+            android:text="20.02万"
+            android:textColor="#5d5d5d"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/mv_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:layout_toLeftOf="@+id/mv_gift"
+            android:background="@drawable/icon_down"/>
+
+        <TextView
+            android:id="@+id/mv_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:layout_toLeftOf="@+id/mv_share"
+            android:background="@drawable/icon_gift"/>
+
+        <TextView
+            android:id="@+id/mv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/mv_video_item_m_top"
+            android:background="@drawable/icon_share"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_mv_driver"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rl_userInfo"
+        android:background="@color/mv_driver_bg"/>
+
+</RelativeLayout>

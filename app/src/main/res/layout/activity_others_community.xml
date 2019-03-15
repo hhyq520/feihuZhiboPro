@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:cube_ptr="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/app_white"
+        android:orientation="vertical">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/pfl_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="false"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1"
+            cube_ptr:ptr_resistance="1.1">
+
+            <cn.feihutv.zhibofeihu.ui.widget.scrolllayoutview.ScrollableLayout
+                android:id="@+id/sl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/other_community_head_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_white">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/sliding_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        app:tabBackground="@drawable/tablayout_background"
+                        app:tabSelectedTextColor="@color/app_white"
+                        app:tabGravity="fill"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabMode="fixed"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"/>
+
+                        <TextView
+                            android:id="@+id/my_tab_driver_left"
+                            android:layout_width="1dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_driver_v"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"/>
+
+                        <TextView
+                            android:id="@+id/my_tab_driver_right"
+                            android:layout_width="1dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_driver_v"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_white"/>
+            </cn.feihutv.zhibofeihu.ui.widget.scrolllayoutview.ScrollableLayout>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50.5dp"
+        android:background="@color/diver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/add_concern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/add_concern_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/concern"
+                android:textColor="@color/hbNum"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/diver"/>
+
+        <LinearLayout
+            android:id="@+id/message_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_msg_other"/>
+
+            <TextView
+                android:id="@+id/secret_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/secret_info"
+                android:textColor="@color/hbNum"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

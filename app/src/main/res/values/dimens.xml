@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--h10-->
+    <dimen name="h10">18sp</dimen>
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+    <dimen name="live_btn_size">35dp</dimen>
+    <dimen name="ui_10_dip">10dip</dimen>
+    <dimen name="text_16_sp">16sp</dimen>
+    <dimen name="text_14_sp">14sp</dimen>
+    <dimen name="text_12_sp">12sp</dimen>
+
+    <dimen name="jz_start_button_w_h_normal">45dp</dimen>
+    <dimen name="jz_start_button_w_h_fullscreen">62dp</dimen>
+    <dimen name="mv_video_item_m_top">12dp</dimen>
+
+
+</resources>

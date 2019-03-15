@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playinpc_msg_linearlayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd_shape"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/img_back"/>
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/dynamic_text"
+            android:textSize="15sp"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/diver"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/bgpupelto">
+
+        <cn.feihutv.zhibofeihu.ui.widget.xlistview.MsgListView
+            android:id="@+id/msg_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:transcriptMode="normal"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/diver"/>
+
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/message_edit"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6.0dip"
+            android:layout_weight="1"
+            android:autoLink="web|email|phone"
+            android:background="@drawable/input_shape_8"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textMultiLine"
+            android:maxHeight="68.0dip"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="14.0dip"
+            android:paddingTop="4.0dip"
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/btn_sure_forbidden"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

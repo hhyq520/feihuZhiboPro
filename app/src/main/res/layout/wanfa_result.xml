@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:background="@drawable/game_result_bg"
+        android:layout_width="300dp"
+        android:layout_height="220dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@color/app_white"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/diver"
+        android:layout_width="300dp"
+        android:layout_height="1px"/>
+    
+    <FrameLayout
+        android:background="@drawable/white_bottom_shape10"
+        android:layout_width="300dp"
+        android:layout_height="67dp" >
+        <Button
+            android:id="@+id/btn_know"
+            android:background="@drawable/yellow_bg"
+            android:layout_gravity="center"
+            android:text="知道了"
+            android:textColor="@color/app_white"
+            android:layout_width="150dp"
+            android:layout_height="37dp" />
+    </FrameLayout>
+</LinearLayout>

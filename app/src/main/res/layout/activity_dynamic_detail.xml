@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.feihutv.zhibofeihu.ui.widget.FitWindowLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:src="@drawable/icon_left_return"/>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/actionbar"
+        android:background="@color/diver"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.wraprecyclerview.WrapRecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputBar"
+        android:layout_below="@+id/line"/>
+
+    <cn.feihutv.zhibofeihu.ui.widget.TalkGiftView
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</cn.feihutv.zhibofeihu.ui.widget.FitWindowLinearLayout>

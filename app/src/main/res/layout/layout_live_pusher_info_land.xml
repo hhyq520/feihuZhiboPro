@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:background="@drawable/pusher_info_background"
+    android:paddingBottom="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:ignore="contentDescription">
+
+    <ImageView
+        android:id="@+id/mHeadIcon_land"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/face" />
+
+    <TextView
+        android:id="@+id/tv_broadcasting_time_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/mHeadIcon_land"
+        android:text="直播中"
+        android:layout_marginRight="9dp"
+        android:textColor="@color/app_white"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_record_ball_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/mHeadIcon_land"
+        android:background="@drawable/liveshow_item_dot"
+        android:scaleType="fitXY" />
+
+
+    <ImageView
+        android:id="@+id/ctl_btnSwitch_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/tv_broadcasting_time_land"/>
+
+</RelativeLayout>

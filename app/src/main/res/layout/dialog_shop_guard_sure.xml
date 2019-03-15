@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_yk_login"
+        android:layout_centerInParent="true"
+        android:layout_margin="60dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已是金守护哦"
+            android:gravity="center"
+            android:textColor="@color/messageTextColor"
+            android:layout_marginTop="18dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="若开通银虎，剩余的金虎时长将直接累计到银虎守护的时长上"
+            android:gravity="center_horizontal|left"
+            android:textColor="@color/text_gray"
+            android:layout_below="@+id/tv_pop"
+            android:layout_marginTop="7dp"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_pop_renzheng"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_btn_background_forbidden"
+            android:textColor="@color/app_white"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:text="开通"
+            android:textSize="12sp"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_closed"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

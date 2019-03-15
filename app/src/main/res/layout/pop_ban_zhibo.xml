@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_shape25"
+        android:layout_centerInParent="true"
+        android:layout_margin="37dp"
+       >
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="ddddddddddddddd"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/textNormal"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_below="@+id/tv_pop"
+            android:id="@+id/tv_ok"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="@string/ok"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="51dp"
+            android:textColor="@color/app_white"
+            android:background="@drawable/yellow_bg"
+            android:layout_marginBottom="24dp"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

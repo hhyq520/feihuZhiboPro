@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/zb_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:moreText="编辑"
+        app:titleText="下载中心"/>
+
+<TextView style="@style/driver_h"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/startAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="START ALL" />
+
+            <Button
+                android:id="@+id/stopAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="STOP ALL" />
+
+            <Button
+                android:id="@+id/deleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="DELETE ALL" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_above="@+id/check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:id="@+id/check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <TextView
+                android:layout_height="1dp"
+                style="@style/driver_h"/>
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <CheckBox
+                        android:id="@+id/checkAll"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:text="全选"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    style="@style/driver_h"/>
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <CheckBox
+                        android:id="@+id/del"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:background="@color/transparent"
+                        android:textColor="@color/mv_video_text"
+                        android:text="删除"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:visibility="gone"
+             android:id="@+id/fl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/view_mv_down_empty"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="9dp"
+        android:background="@drawable/shape_round_white">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:src="@drawable/icon_mv_collect_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" />
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="name"
+            android:id="@+id/tv_userName"
+            android:layout_below="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="12dp"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/dynamic_text_color2"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_userName"
+            android:id="@+id/item_dev"
+            style="@style/mv_driver_h"/>
+
+
+        <TextView
+            android:text="提示内容"
+            android:id="@+id/tv_desc"
+            android:layout_below="@+id/item_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="12dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/mv_demand_text"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn_background_forbidden"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="@color/app_white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sure"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="取消"
+            android:textColor="@color/textNormal"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

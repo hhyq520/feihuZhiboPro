@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="base_bg">#efefef</color>
+    <color name="pupel">#21212D</color>
+    <color name="appColor">#00c08d</color>
+    <color name="text_gray">#A0A0A0</color>
+    <color name="app_white">#ffffff</color>
+    <color name="color_click">#1a1a23</color>
+    <color name="state_bar">#3e365c</color>
+    <color name="trans">#4C000000</color>
+    <color name="btn_enable">#c7c7c7</color>
+    <color name="black">#000000</color>
+    <color name="textNormal">#5d5d5d</color>
+    <color name="inputTextColor">#000000</color>
+    <color name="red_pressed">#eF3425</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorTransparentBlack">#44777777</color>
+    <color name="btn_sure_forbidden">#ffbb00</color>
+    <color name="dialog_bg">#44000000</color>
+
+    <color name="colorGray3">#C8C8C8</color>
+    <color name="con_bg">#282A36</color>
+    <color name="bgpupelto">#00000000</color>
+    <color name="text_gray1">#777777</color>
+    <color name="noticetextcolor">#a0a0a0</color>
+
+    <color name="blue">#9a38f9</color>
+    <color name="banner1">#f4eecf</color>
+    <color name="banner2">#d7e0ec</color>
+
+    <color name="text1">#5e5e5e</color>
+    <color name="text2">#505050</color>
+
+    <color name="bg_color">#f7f7f7</color>
+    <color name="tab_bottom">#707070</color>
+    <color name="bangdan_title">#797979</color>
+    <color name="bangdan_second_title">#4e4e4e</color>
+    <color name="bangdan_bg">#efefef</color>
+    <color name="recyclver_diver">#eaeaea</color>
+    <color name="messageTextColor">#303030</color>
+    <color name="colorTextG2">#999999</color>
+
+
+    <color name="im_font_color_text_hint">#abb1b6</color>
+
+    <color name="viewBg">#f0f0f0</color>
+    <color name="diver">#c1c0c0</color>
+    <color name="beautiColor">#ecef0d</color>
+
+    <color name="picture_bg">#202020</color>
+    <color name="line">#ffdec1</color>
+
+    <color name="hbNum">#323232</color>
+
+
+    <color name="my_tab_text_n">#5d5d5d</color>
+
+    <color name="my_tab_text_s">#ffffff</color>
+    <color name="tab_driver_v">#d6d7dc</color>
+
+    <color name="red">#fd593f</color>
+    <color name="red_2">#fd6b91</color>
+    <color name="dynamic_text">#303030</color>
+    <color name="dynamic_text_color2">#5d5d5d</color>
+    <color name="dynamic_bg1">#fff3d3</color>
+    <color name="dynamic_bg2">#efefef</color>
+    <color name="mv_driver_bg">#efefef</color>
+    <color name="mv_item_sq_bg">#d7e8ec</color>
+    <color name="mv_item_coin">#ff7f84</color>
+    <color name="bagBg">#89d6d6d6</color>
+    <color name="btnBg">#a6a6a6</color>
+    <color name="nick_name_color">#e8a9ff</color>
+    <color name="mv_demand_text">#a0a0a0</color>
+    <color name="mv_video_text">#ffbb00</color>
+    <color name="mv_driver_bg2">#f7f7f7</color>
+
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+</resources>

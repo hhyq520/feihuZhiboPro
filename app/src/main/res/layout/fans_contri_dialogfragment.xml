@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.TCActivityTitle
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:titleText="粉丝贡献榜" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/diver"/>
+
+    <FrameLayout
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/fans_contri_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="63dp"
+            android:layout_marginRight="63dp"
+            app:tl_underline_color="@color/app_white"
+            app:tl_indicator_color="@color/btn_sure_forbidden"
+            app:tl_indicator_style="NORMAL"
+            app:tl_textsize="12sp"
+            app:tl_tab_space_equal="true"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_textSelectColor="@color/btn_sure_forbidden"
+            app:tl_textUnselectColor="@color/my_tab_text_n"/>
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:background="@color/app_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

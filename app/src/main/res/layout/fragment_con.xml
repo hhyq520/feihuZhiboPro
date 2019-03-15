@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.feihutv.zhibofeihu.ui.bangdan.ConFragment">
+
+    <cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout
+        android:id="@+id/bangdan_swip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bangdan_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </cn.feihutv.zhibofeihu.ui.widget.swiperefreshlayout.VRefreshLayout>
+
+
+    <cn.feihutv.zhibofeihu.ui.widget.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
